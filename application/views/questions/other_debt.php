@@ -15,7 +15,7 @@
                 <div id="register-form" class="register-form">
                     <div class="section-field">
                         <label><?php echo $this->labelArray['other_debt'];?></label>
-                        <div class="input-group">
+                       <div class ='field-widget'>
                             <input type="number" min="0" step="1000" class="form-control" required="required" autocomplete="off" name="other_debt"  value="<?php echo Smart::setValue('other_debt', $app->other_debt); ?>"
                                    data-message="<?php echo lang('req_gift_value') ?>"  style="height: 48px;">
                                    <div class="input-group-btn help-select-list"> 
@@ -25,7 +25,7 @@
                     </div>
                     <div class="section-field">
                         <label><?php echo $this->labelArray['other_debt_spouse'];?></label>
-                        <div class="input-group">
+                       <div class ='field-widget'>
                             <input type="number" min="0" step="1000" class="form-control" required="required" autocomplete="off" name="other_debt_spouse"  value="<?php echo Smart::setValue('other_debt_spouse', $app->other_debt_spouse); ?>"
                                    data-message="<?php echo lang('req_gift_value') ?>"  style="height: 48px;">
                                    <div class="input-group-btn help-select-list"> 

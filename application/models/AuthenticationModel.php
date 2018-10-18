@@ -53,19 +53,22 @@ class AuthenticationModel extends Pixel_Model {
     public function isAutorized()
     {
         $this->database->select('id, password_hash, role_id, email, first_name, last_name, active, language')
-                ->from('users')
-                ->where('email',  $this->username)
-                ->where('active', Constants::$ENABLE)
-                ->where('is_completed', Constants::$ENABLE);
+        ->from('users')
+        ->where('email',  $this->username)
+        ->where('active', Constants::$ENABLE)
+        ->where('is_completed', Constants::$ENABLE);
         $records = $this->database->get();
         if($records->num_rows() > 0){
             $row = $records->row(0);
             if($this->verifyPassword($row->password_hash)){
                 unset($row->password_hash);
-                
+
                 $this->updateLastLogin();
                 return $row;
             }
+
+            //return $row;
+
             
         }
         return NULL;

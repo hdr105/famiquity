@@ -15,7 +15,7 @@
                 <div id="register-form" class="register-form">
                     <div class="section-field">
                         <label><?php echo $this->labelArray['crypto_currencies'];?></label>
-                        <div class="input-group">
+                        <div class ='field-widget'>
                             <input type="number" min="0" step="1000" class="form-control" required="required" autocomplete="off" name="crypto_currencies"  value="<?php echo Smart::setValue('crypto_currencies', $app->crypto_currencies); ?>"
                                    data-message="<?php echo lang('req_gift_value') ?>" style="height: 48px;">
                                    <div class="input-group-btn help-select-list"> 
@@ -25,7 +25,7 @@
                     </div>
                     <div class="section-field">
                         <label><?php echo $this->labelArray['crypto_currencies_spouse'];?></label>
-                        <div class="input-group">
+                        <div class ='field-widget'>
                             <input type="number" min="0" step="1000" class="form-control" required="required" autocomplete="off" name="crypto_currencies_spouse"  value="<?php echo Smart::setValue('crypto_currencies_spouse', $app->crypto_currencies_spouse); ?>"
                                    data-message="<?php echo lang('req_gift_value') ?>" style="height: 48px;">
                                    <div class="input-group-btn help-select-list"> 

@@ -2647,6 +2647,7 @@ INFO - 2018-10-18 12:28:15 --> Input Class Initialized
 INFO - 2018-10-18 12:28:15 --> Language Class Initialized
 ERROR - 2018-10-18 12:28:15 --> 404 Page Not Found: Assets/css
 <<<<<<< HEAD
+<<<<<<< HEAD
 INFO - 2018-10-18 12:32:35 --> Config Class Initialized
 INFO - 2018-10-18 12:32:35 --> Hooks Class Initialized
 DEBUG - 2018-10-18 12:32:35 --> UTF-8 Support Enabled
@@ -10029,3 +10030,887 @@ ERROR - 2018-10-18 14:08:04 --> 404 Page Not Found: Assets/css
 >>>>>>> 4c5a3fb837b72a5ebe34152c40ec6a8ad1b51698
 =======
 >>>>>>> 4c5a3fb837b72a5ebe34152c40ec6a8ad1b51698
+INFO - 2018-10-18 16:02:35 --> Config Class Initialized
+INFO - 2018-10-18 16:02:35 --> Hooks Class Initialized
+DEBUG - 2018-10-18 16:02:35 --> UTF-8 Support Enabled
+INFO - 2018-10-18 16:02:35 --> Utf8 Class Initialized
+INFO - 2018-10-18 16:02:35 --> URI Class Initialized
+DEBUG - 2018-10-18 16:02:35 --> No URI present. Default controller set.
+INFO - 2018-10-18 16:02:35 --> Router Class Initialized
+INFO - 2018-10-18 16:02:36 --> Output Class Initialized
+INFO - 2018-10-18 16:02:36 --> Security Class Initialized
+DEBUG - 2018-10-18 16:02:36 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-10-18 16:02:36 --> CSRF cookie sent
+INFO - 2018-10-18 16:02:36 --> Input Class Initialized
+INFO - 2018-10-18 16:02:36 --> Language Class Initialized
+INFO - 2018-10-18 16:02:37 --> Loader Class Initialized
+INFO - 2018-10-18 16:02:37 --> Helper loaded: url_helper
+INFO - 2018-10-18 16:02:37 --> Helper loaded: form_helper
+INFO - 2018-10-18 16:02:37 --> Helper loaded: language_helper
+DEBUG - 2018-10-18 16:02:37 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2018-10-18 16:02:37 --> Session: Class initialized using 'files' driver.
+INFO - 2018-10-18 16:02:37 --> User Agent Class Initialized
+INFO - 2018-10-18 16:02:38 --> Controller Class Initialized
+INFO - 2018-10-18 16:02:38 --> Language file loaded: language/en/common_lang.php
+INFO - 2018-10-18 16:02:38 --> Language file loaded: language/en/form_validation_lang.php
+INFO - 2018-10-18 16:02:38 --> Pixel_Model class loaded
+INFO - 2018-10-18 16:02:39 --> Database Driver Class Initialized
+INFO - 2018-10-18 16:02:39 --> Model "QuestionsModel" initialized
+INFO - 2018-10-18 16:02:40 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_basic_nav.php
+INFO - 2018-10-18 16:02:40 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_header.php
+INFO - 2018-10-18 16:02:40 --> File loaded: F:\xampp\htdocs\famiquity\application\views\home.php
+INFO - 2018-10-18 16:02:40 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_footer.php
+INFO - 2018-10-18 16:02:40 --> Final output sent to browser
+DEBUG - 2018-10-18 16:02:40 --> Total execution time: 5.9243
+INFO - 2018-10-18 16:02:51 --> Config Class Initialized
+INFO - 2018-10-18 16:02:51 --> Hooks Class Initialized
+DEBUG - 2018-10-18 16:02:51 --> UTF-8 Support Enabled
+INFO - 2018-10-18 16:02:51 --> Utf8 Class Initialized
+INFO - 2018-10-18 16:02:51 --> URI Class Initialized
+INFO - 2018-10-18 16:02:52 --> Router Class Initialized
+INFO - 2018-10-18 16:02:52 --> Output Class Initialized
+INFO - 2018-10-18 16:02:52 --> Security Class Initialized
+DEBUG - 2018-10-18 16:02:52 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-10-18 16:02:52 --> CSRF cookie sent
+INFO - 2018-10-18 16:02:52 --> Input Class Initialized
+INFO - 2018-10-18 16:02:52 --> Language Class Initialized
+INFO - 2018-10-18 16:02:52 --> Loader Class Initialized
+INFO - 2018-10-18 16:02:52 --> Helper loaded: url_helper
+INFO - 2018-10-18 16:02:52 --> Helper loaded: form_helper
+INFO - 2018-10-18 16:02:52 --> Helper loaded: language_helper
+DEBUG - 2018-10-18 16:02:52 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2018-10-18 16:02:52 --> Session: Class initialized using 'files' driver.
+INFO - 2018-10-18 16:02:52 --> User Agent Class Initialized
+INFO - 2018-10-18 16:02:52 --> Controller Class Initialized
+INFO - 2018-10-18 16:02:52 --> Language file loaded: language/en/common_lang.php
+INFO - 2018-10-18 16:02:52 --> Language file loaded: language/en/form_validation_lang.php
+INFO - 2018-10-18 16:02:52 --> Pixel_Model class loaded
+INFO - 2018-10-18 16:02:53 --> Database Driver Class Initialized
+INFO - 2018-10-18 16:02:53 --> Model "QuestionsModel" initialized
+INFO - 2018-10-18 16:02:53 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_basic_nav.php
+INFO - 2018-10-18 16:02:53 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_header.php
+INFO - 2018-10-18 16:02:53 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_page_banner_empty.php
+INFO - 2018-10-18 16:02:53 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_page_header.php
+INFO - 2018-10-18 16:02:53 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_bar.php
+INFO - 2018-10-18 16:02:53 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_buttons.php
+INFO - 2018-10-18 16:02:53 --> File loaded: F:\xampp\htdocs\famiquity\application\views\questions/start_questions.php
+INFO - 2018-10-18 16:02:53 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_footer.php
+INFO - 2018-10-18 16:02:53 --> Final output sent to browser
+DEBUG - 2018-10-18 16:02:53 --> Total execution time: 1.9956
+INFO - 2018-10-18 16:03:09 --> Config Class Initialized
+INFO - 2018-10-18 16:03:09 --> Hooks Class Initialized
+DEBUG - 2018-10-18 16:03:09 --> UTF-8 Support Enabled
+INFO - 2018-10-18 16:03:09 --> Utf8 Class Initialized
+INFO - 2018-10-18 16:03:09 --> URI Class Initialized
+INFO - 2018-10-18 16:03:09 --> Router Class Initialized
+INFO - 2018-10-18 16:03:09 --> Output Class Initialized
+INFO - 2018-10-18 16:03:09 --> Security Class Initialized
+DEBUG - 2018-10-18 16:03:09 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-10-18 16:03:09 --> CSRF cookie sent
+INFO - 2018-10-18 16:03:09 --> Input Class Initialized
+INFO - 2018-10-18 16:03:09 --> Language Class Initialized
+INFO - 2018-10-18 16:03:10 --> Loader Class Initialized
+INFO - 2018-10-18 16:03:10 --> Helper loaded: url_helper
+INFO - 2018-10-18 16:03:10 --> Helper loaded: form_helper
+INFO - 2018-10-18 16:03:10 --> Helper loaded: language_helper
+DEBUG - 2018-10-18 16:03:10 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2018-10-18 16:03:10 --> Session: Class initialized using 'files' driver.
+INFO - 2018-10-18 16:03:10 --> User Agent Class Initialized
+INFO - 2018-10-18 16:03:10 --> Controller Class Initialized
+INFO - 2018-10-18 16:03:10 --> Language file loaded: language/en/common_lang.php
+INFO - 2018-10-18 16:03:10 --> Language file loaded: language/en/form_validation_lang.php
+INFO - 2018-10-18 16:03:10 --> Pixel_Model class loaded
+INFO - 2018-10-18 16:03:10 --> Database Driver Class Initialized
+INFO - 2018-10-18 16:03:10 --> Model "QuestionsModel" initialized
+INFO - 2018-10-18 16:03:10 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_basic_nav.php
+INFO - 2018-10-18 16:03:10 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_header.php
+INFO - 2018-10-18 16:03:10 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_page_banner_empty.php
+INFO - 2018-10-18 16:03:10 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_page_header.php
+INFO - 2018-10-18 16:03:10 --> File loaded: F:\xampp\htdocs\famiquity\application\views\questions/contact_us.php
+INFO - 2018-10-18 16:03:10 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_footer.php
+INFO - 2018-10-18 16:03:10 --> Final output sent to browser
+DEBUG - 2018-10-18 16:03:11 --> Total execution time: 1.6082
+INFO - 2018-10-18 16:04:51 --> Config Class Initialized
+INFO - 2018-10-18 16:04:51 --> Hooks Class Initialized
+DEBUG - 2018-10-18 16:04:51 --> UTF-8 Support Enabled
+INFO - 2018-10-18 16:04:51 --> Utf8 Class Initialized
+INFO - 2018-10-18 16:04:51 --> URI Class Initialized
+INFO - 2018-10-18 16:04:51 --> Router Class Initialized
+INFO - 2018-10-18 16:04:51 --> Output Class Initialized
+INFO - 2018-10-18 16:04:51 --> Security Class Initialized
+DEBUG - 2018-10-18 16:04:51 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-10-18 16:04:51 --> CSRF cookie sent
+INFO - 2018-10-18 16:04:51 --> Input Class Initialized
+INFO - 2018-10-18 16:04:51 --> Language Class Initialized
+INFO - 2018-10-18 16:04:51 --> Loader Class Initialized
+INFO - 2018-10-18 16:04:51 --> Helper loaded: url_helper
+INFO - 2018-10-18 16:04:51 --> Helper loaded: form_helper
+INFO - 2018-10-18 16:04:51 --> Helper loaded: language_helper
+DEBUG - 2018-10-18 16:04:51 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2018-10-18 16:04:51 --> Session: Class initialized using 'files' driver.
+INFO - 2018-10-18 16:04:51 --> User Agent Class Initialized
+INFO - 2018-10-18 16:04:52 --> Controller Class Initialized
+INFO - 2018-10-18 16:04:52 --> Language file loaded: language/en/common_lang.php
+INFO - 2018-10-18 16:04:52 --> Language file loaded: language/en/form_validation_lang.php
+INFO - 2018-10-18 16:04:52 --> Pixel_Model class loaded
+INFO - 2018-10-18 16:04:52 --> Database Driver Class Initialized
+INFO - 2018-10-18 16:04:52 --> Model "QuestionsModel" initialized
+INFO - 2018-10-18 16:04:52 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_basic_nav.php
+INFO - 2018-10-18 16:04:52 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_header.php
+INFO - 2018-10-18 16:04:52 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_page_banner_empty.php
+INFO - 2018-10-18 16:04:52 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_page_header.php
+INFO - 2018-10-18 16:04:52 --> File loaded: F:\xampp\htdocs\famiquity\application\views\questions/contact_us.php
+INFO - 2018-10-18 16:04:52 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_footer.php
+INFO - 2018-10-18 16:04:52 --> Final output sent to browser
+DEBUG - 2018-10-18 16:04:52 --> Total execution time: 1.4023
+INFO - 2018-10-18 16:04:55 --> Config Class Initialized
+INFO - 2018-10-18 16:04:55 --> Hooks Class Initialized
+DEBUG - 2018-10-18 16:04:55 --> UTF-8 Support Enabled
+INFO - 2018-10-18 16:04:55 --> Utf8 Class Initialized
+INFO - 2018-10-18 16:04:55 --> URI Class Initialized
+INFO - 2018-10-18 16:04:55 --> Router Class Initialized
+INFO - 2018-10-18 16:04:55 --> Output Class Initialized
+INFO - 2018-10-18 16:04:55 --> Security Class Initialized
+DEBUG - 2018-10-18 16:04:55 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-10-18 16:04:55 --> CSRF cookie sent
+INFO - 2018-10-18 16:04:55 --> Input Class Initialized
+INFO - 2018-10-18 16:04:55 --> Language Class Initialized
+INFO - 2018-10-18 16:04:55 --> Loader Class Initialized
+INFO - 2018-10-18 16:04:55 --> Helper loaded: url_helper
+INFO - 2018-10-18 16:04:56 --> Helper loaded: form_helper
+INFO - 2018-10-18 16:04:56 --> Helper loaded: language_helper
+DEBUG - 2018-10-18 16:04:56 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2018-10-18 16:04:56 --> Session: Class initialized using 'files' driver.
+INFO - 2018-10-18 16:04:56 --> User Agent Class Initialized
+INFO - 2018-10-18 16:04:56 --> Controller Class Initialized
+INFO - 2018-10-18 16:04:56 --> Language file loaded: language/en/common_lang.php
+INFO - 2018-10-18 16:04:56 --> Language file loaded: language/en/form_validation_lang.php
+DEBUG - 2018-10-18 16:04:56 --> Config file loaded: F:\xampp\htdocs\famiquity\application\config/recaptcha.php
+INFO - 2018-10-18 16:04:56 --> Config Class Initialized
+INFO - 2018-10-18 16:04:56 --> Hooks Class Initialized
+DEBUG - 2018-10-18 16:04:56 --> UTF-8 Support Enabled
+INFO - 2018-10-18 16:04:56 --> Utf8 Class Initialized
+INFO - 2018-10-18 16:04:56 --> URI Class Initialized
+INFO - 2018-10-18 16:04:56 --> Router Class Initialized
+INFO - 2018-10-18 16:04:56 --> Output Class Initialized
+INFO - 2018-10-18 16:04:57 --> Security Class Initialized
+DEBUG - 2018-10-18 16:04:57 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-10-18 16:04:57 --> CSRF cookie sent
+INFO - 2018-10-18 16:04:57 --> Input Class Initialized
+INFO - 2018-10-18 16:04:57 --> Language Class Initialized
+INFO - 2018-10-18 16:04:57 --> Loader Class Initialized
+INFO - 2018-10-18 16:04:57 --> Helper loaded: url_helper
+INFO - 2018-10-18 16:04:57 --> Helper loaded: form_helper
+INFO - 2018-10-18 16:04:57 --> Helper loaded: language_helper
+DEBUG - 2018-10-18 16:04:57 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2018-10-18 16:04:57 --> Session: Class initialized using 'files' driver.
+INFO - 2018-10-18 16:04:57 --> User Agent Class Initialized
+INFO - 2018-10-18 16:04:57 --> Controller Class Initialized
+INFO - 2018-10-18 16:04:57 --> Language file loaded: language/en/common_lang.php
+INFO - 2018-10-18 16:04:57 --> Language file loaded: language/en/form_validation_lang.php
+INFO - 2018-10-18 16:04:57 --> Pixel_Model class loaded
+INFO - 2018-10-18 16:04:58 --> Database Driver Class Initialized
+INFO - 2018-10-18 16:04:58 --> Model "RegistrationModel" initialized
+DEBUG - 2018-10-18 16:04:58 --> Config file loaded: F:\xampp\htdocs\famiquity\application\config/recaptcha.php
+INFO - 2018-10-18 16:04:58 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_basic_nav.php
+INFO - 2018-10-18 16:04:58 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_header.php
+INFO - 2018-10-18 16:04:58 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_page_banner_empty.php
+INFO - 2018-10-18 16:04:58 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_page_header.php
+INFO - 2018-10-18 16:04:58 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_soft_error.php
+ERROR - 2018-10-18 16:04:58 --> Could not find the language line "req_email"
+INFO - 2018-10-18 16:04:58 --> File loaded: F:\xampp\htdocs\famiquity\application\views\register/signup.php
+INFO - 2018-10-18 16:04:58 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_footer.php
+INFO - 2018-10-18 16:04:59 --> Final output sent to browser
+DEBUG - 2018-10-18 16:04:59 --> Total execution time: 2.3329
+INFO - 2018-10-18 16:05:27 --> Config Class Initialized
+INFO - 2018-10-18 16:05:27 --> Hooks Class Initialized
+DEBUG - 2018-10-18 16:05:27 --> UTF-8 Support Enabled
+INFO - 2018-10-18 16:05:27 --> Utf8 Class Initialized
+INFO - 2018-10-18 16:05:27 --> URI Class Initialized
+INFO - 2018-10-18 16:05:27 --> Router Class Initialized
+INFO - 2018-10-18 16:05:27 --> Output Class Initialized
+INFO - 2018-10-18 16:05:27 --> Security Class Initialized
+DEBUG - 2018-10-18 16:05:27 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-10-18 16:05:27 --> CSRF cookie sent
+INFO - 2018-10-18 16:05:28 --> Input Class Initialized
+INFO - 2018-10-18 16:05:28 --> Language Class Initialized
+INFO - 2018-10-18 16:05:28 --> Loader Class Initialized
+INFO - 2018-10-18 16:05:28 --> Helper loaded: url_helper
+INFO - 2018-10-18 16:05:28 --> Helper loaded: form_helper
+INFO - 2018-10-18 16:05:28 --> Helper loaded: language_helper
+DEBUG - 2018-10-18 16:05:28 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2018-10-18 16:05:28 --> Session: Class initialized using 'files' driver.
+INFO - 2018-10-18 16:05:28 --> User Agent Class Initialized
+INFO - 2018-10-18 16:05:28 --> Controller Class Initialized
+INFO - 2018-10-18 16:05:28 --> Language file loaded: language/en/common_lang.php
+INFO - 2018-10-18 16:05:28 --> Language file loaded: language/en/form_validation_lang.php
+INFO - 2018-10-18 16:05:28 --> Pixel_Model class loaded
+INFO - 2018-10-18 16:05:28 --> Database Driver Class Initialized
+INFO - 2018-10-18 16:05:28 --> Model "RegistrationModel" initialized
+DEBUG - 2018-10-18 16:05:28 --> Config file loaded: F:\xampp\htdocs\famiquity\application\config/recaptcha.php
+INFO - 2018-10-18 16:05:28 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_basic_nav.php
+INFO - 2018-10-18 16:05:29 --> Config Class Initialized
+INFO - 2018-10-18 16:05:29 --> Hooks Class Initialized
+INFO - 2018-10-18 16:05:29 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_header.php
+INFO - 2018-10-18 16:05:29 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_page_banner_empty.php
+DEBUG - 2018-10-18 16:05:29 --> UTF-8 Support Enabled
+INFO - 2018-10-18 16:05:29 --> Utf8 Class Initialized
+INFO - 2018-10-18 16:05:29 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_page_header.php
+INFO - 2018-10-18 16:05:29 --> URI Class Initialized
+ERROR - 2018-10-18 16:05:29 --> Could not find the language line "req_email"
+INFO - 2018-10-18 16:05:29 --> File loaded: F:\xampp\htdocs\famiquity\application\views\register/signup.php
+INFO - 2018-10-18 16:05:29 --> Router Class Initialized
+INFO - 2018-10-18 16:05:29 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_footer.php
+INFO - 2018-10-18 16:05:29 --> Output Class Initialized
+INFO - 2018-10-18 16:05:29 --> Final output sent to browser
+INFO - 2018-10-18 16:05:29 --> Security Class Initialized
+DEBUG - 2018-10-18 16:05:29 --> Total execution time: 1.8411
+DEBUG - 2018-10-18 16:05:29 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-10-18 16:05:29 --> CSRF cookie sent
+INFO - 2018-10-18 16:05:29 --> Input Class Initialized
+INFO - 2018-10-18 16:05:29 --> Language Class Initialized
+INFO - 2018-10-18 16:05:29 --> Loader Class Initialized
+INFO - 2018-10-18 16:05:29 --> Helper loaded: url_helper
+INFO - 2018-10-18 16:05:29 --> Helper loaded: form_helper
+INFO - 2018-10-18 16:05:29 --> Helper loaded: language_helper
+DEBUG - 2018-10-18 16:05:29 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2018-10-18 16:05:29 --> Session: Class initialized using 'files' driver.
+INFO - 2018-10-18 16:05:29 --> User Agent Class Initialized
+INFO - 2018-10-18 16:05:30 --> Controller Class Initialized
+INFO - 2018-10-18 16:05:30 --> Language file loaded: language/en/common_lang.php
+INFO - 2018-10-18 16:05:30 --> Language file loaded: language/en/form_validation_lang.php
+INFO - 2018-10-18 16:05:30 --> Pixel_Model class loaded
+INFO - 2018-10-18 16:05:30 --> Database Driver Class Initialized
+INFO - 2018-10-18 16:05:30 --> Model "QuestionsModel" initialized
+INFO - 2018-10-18 16:05:30 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_basic_nav.php
+INFO - 2018-10-18 16:05:30 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_header.php
+INFO - 2018-10-18 16:05:30 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_page_banner_empty.php
+INFO - 2018-10-18 16:05:30 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_page_header.php
+INFO - 2018-10-18 16:05:30 --> File loaded: F:\xampp\htdocs\famiquity\application\views\questions/contact_us.php
+INFO - 2018-10-18 16:05:30 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_footer.php
+INFO - 2018-10-18 16:05:30 --> Final output sent to browser
+DEBUG - 2018-10-18 16:05:30 --> Total execution time: 1.5844
+INFO - 2018-10-18 16:05:33 --> Config Class Initialized
+INFO - 2018-10-18 16:05:33 --> Hooks Class Initialized
+DEBUG - 2018-10-18 16:05:33 --> UTF-8 Support Enabled
+INFO - 2018-10-18 16:05:33 --> Utf8 Class Initialized
+INFO - 2018-10-18 16:05:33 --> URI Class Initialized
+INFO - 2018-10-18 16:05:33 --> Router Class Initialized
+INFO - 2018-10-18 16:05:33 --> Output Class Initialized
+INFO - 2018-10-18 16:05:33 --> Security Class Initialized
+DEBUG - 2018-10-18 16:05:33 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-10-18 16:05:33 --> CSRF cookie sent
+INFO - 2018-10-18 16:05:33 --> Input Class Initialized
+INFO - 2018-10-18 16:05:33 --> Language Class Initialized
+INFO - 2018-10-18 16:05:33 --> Loader Class Initialized
+INFO - 2018-10-18 16:05:34 --> Helper loaded: url_helper
+INFO - 2018-10-18 16:05:34 --> Helper loaded: form_helper
+INFO - 2018-10-18 16:05:34 --> Helper loaded: language_helper
+DEBUG - 2018-10-18 16:05:34 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2018-10-18 16:05:34 --> Session: Class initialized using 'files' driver.
+INFO - 2018-10-18 16:05:34 --> User Agent Class Initialized
+INFO - 2018-10-18 16:05:34 --> Controller Class Initialized
+INFO - 2018-10-18 16:05:34 --> Language file loaded: language/en/common_lang.php
+INFO - 2018-10-18 16:05:34 --> Language file loaded: language/en/form_validation_lang.php
+INFO - 2018-10-18 16:05:34 --> Form Validation Class Initialized
+INFO - 2018-10-18 16:05:34 --> Pixel_Model class loaded
+INFO - 2018-10-18 16:05:34 --> Database Driver Class Initialized
+INFO - 2018-10-18 16:05:34 --> Model "RegistrationModel" initialized
+DEBUG - 2018-10-18 16:05:34 --> Config file loaded: F:\xampp\htdocs\famiquity\application\config/recaptcha.php
+INFO - 2018-10-18 16:05:34 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_basic_nav.php
+INFO - 2018-10-18 16:05:34 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_header.php
+INFO - 2018-10-18 16:05:34 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_page_banner_empty.php
+INFO - 2018-10-18 16:05:34 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_page_header.php
+ERROR - 2018-10-18 16:05:35 --> Could not find the language line "req_email"
+INFO - 2018-10-18 16:05:35 --> File loaded: F:\xampp\htdocs\famiquity\application\views\register/signup.php
+INFO - 2018-10-18 16:05:35 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_footer.php
+INFO - 2018-10-18 16:05:35 --> Final output sent to browser
+DEBUG - 2018-10-18 16:05:35 --> Total execution time: 1.8146
+INFO - 2018-10-18 16:06:02 --> Config Class Initialized
+INFO - 2018-10-18 16:06:02 --> Hooks Class Initialized
+DEBUG - 2018-10-18 16:06:02 --> UTF-8 Support Enabled
+INFO - 2018-10-18 16:06:02 --> Utf8 Class Initialized
+INFO - 2018-10-18 16:06:02 --> URI Class Initialized
+INFO - 2018-10-18 16:06:02 --> Router Class Initialized
+INFO - 2018-10-18 16:06:02 --> Output Class Initialized
+INFO - 2018-10-18 16:06:02 --> Security Class Initialized
+DEBUG - 2018-10-18 16:06:02 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-10-18 16:06:03 --> CSRF cookie sent
+INFO - 2018-10-18 16:06:03 --> Input Class Initialized
+INFO - 2018-10-18 16:06:03 --> Language Class Initialized
+INFO - 2018-10-18 16:06:03 --> Loader Class Initialized
+INFO - 2018-10-18 16:06:03 --> Helper loaded: url_helper
+INFO - 2018-10-18 16:06:03 --> Helper loaded: form_helper
+INFO - 2018-10-18 16:06:03 --> Helper loaded: language_helper
+DEBUG - 2018-10-18 16:06:03 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2018-10-18 16:06:03 --> Session: Class initialized using 'files' driver.
+INFO - 2018-10-18 16:06:03 --> User Agent Class Initialized
+INFO - 2018-10-18 16:06:03 --> Controller Class Initialized
+INFO - 2018-10-18 16:06:03 --> Language file loaded: language/en/common_lang.php
+INFO - 2018-10-18 16:06:03 --> Language file loaded: language/en/form_validation_lang.php
+INFO - 2018-10-18 16:06:03 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_basic_nav.php
+INFO - 2018-10-18 16:06:03 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_header.php
+INFO - 2018-10-18 16:06:03 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_page_banner_empty.php
+INFO - 2018-10-18 16:06:04 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_page_header.php
+INFO - 2018-10-18 16:06:04 --> File loaded: F:\xampp\htdocs\famiquity\application\views\register/signup_terms.php
+INFO - 2018-10-18 16:06:04 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_footer.php
+INFO - 2018-10-18 16:06:04 --> Final output sent to browser
+DEBUG - 2018-10-18 16:06:04 --> Total execution time: 1.6694
+INFO - 2018-10-18 16:06:24 --> Config Class Initialized
+INFO - 2018-10-18 16:06:24 --> Hooks Class Initialized
+DEBUG - 2018-10-18 16:06:24 --> UTF-8 Support Enabled
+INFO - 2018-10-18 16:06:24 --> Utf8 Class Initialized
+INFO - 2018-10-18 16:06:24 --> URI Class Initialized
+INFO - 2018-10-18 16:06:24 --> Router Class Initialized
+INFO - 2018-10-18 16:06:24 --> Output Class Initialized
+INFO - 2018-10-18 16:06:24 --> Security Class Initialized
+DEBUG - 2018-10-18 16:06:24 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-10-18 16:06:24 --> CSRF cookie sent
+INFO - 2018-10-18 16:06:24 --> CSRF token verified
+INFO - 2018-10-18 16:06:24 --> Input Class Initialized
+INFO - 2018-10-18 16:06:24 --> Language Class Initialized
+INFO - 2018-10-18 16:06:24 --> Loader Class Initialized
+INFO - 2018-10-18 16:06:24 --> Helper loaded: url_helper
+INFO - 2018-10-18 16:06:25 --> Helper loaded: form_helper
+INFO - 2018-10-18 16:06:25 --> Helper loaded: language_helper
+DEBUG - 2018-10-18 16:06:25 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2018-10-18 16:06:25 --> Session: Class initialized using 'files' driver.
+INFO - 2018-10-18 16:06:25 --> User Agent Class Initialized
+INFO - 2018-10-18 16:06:25 --> Controller Class Initialized
+INFO - 2018-10-18 16:06:25 --> Language file loaded: language/en/common_lang.php
+INFO - 2018-10-18 16:06:25 --> Language file loaded: language/en/form_validation_lang.php
+INFO - 2018-10-18 16:06:25 --> Pixel_Model class loaded
+INFO - 2018-10-18 16:06:25 --> Database Driver Class Initialized
+INFO - 2018-10-18 16:06:25 --> Model "RegistrationModel" initialized
+INFO - 2018-10-18 16:06:25 --> Helper loaded: string_helper
+INFO - 2018-10-18 16:06:25 --> Language file loaded: language/en/notifications_lang.php
+INFO - 2018-10-18 16:06:26 --> File loaded: F:\xampp\htdocs\famiquity\application\views\emails/_buttons.php
+INFO - 2018-10-18 16:06:26 --> File loaded: F:\xampp\htdocs\famiquity\application\views\emails/header.php
+INFO - 2018-10-18 16:06:26 --> File loaded: F:\xampp\htdocs\famiquity\application\views\emails/footer.php
+INFO - 2018-10-18 16:06:26 --> File loaded: F:\xampp\htdocs\famiquity\application\views\emails/generic.php
+INFO - 2018-10-18 16:06:27 --> Email Class Initialized
+INFO - 2018-10-18 16:06:28 --> Language file loaded: language/english/email_lang.php
+INFO - 2018-10-18 16:06:28 --> Config Class Initialized
+INFO - 2018-10-18 16:06:28 --> Hooks Class Initialized
+DEBUG - 2018-10-18 16:06:28 --> UTF-8 Support Enabled
+INFO - 2018-10-18 16:06:28 --> Utf8 Class Initialized
+INFO - 2018-10-18 16:06:28 --> URI Class Initialized
+INFO - 2018-10-18 16:06:28 --> Router Class Initialized
+INFO - 2018-10-18 16:06:29 --> Output Class Initialized
+INFO - 2018-10-18 16:06:29 --> Security Class Initialized
+DEBUG - 2018-10-18 16:06:29 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-10-18 16:06:29 --> CSRF cookie sent
+INFO - 2018-10-18 16:06:29 --> Input Class Initialized
+INFO - 2018-10-18 16:06:29 --> Language Class Initialized
+INFO - 2018-10-18 16:06:29 --> Loader Class Initialized
+INFO - 2018-10-18 16:06:29 --> Helper loaded: url_helper
+INFO - 2018-10-18 16:06:29 --> Helper loaded: form_helper
+INFO - 2018-10-18 16:06:29 --> Helper loaded: language_helper
+DEBUG - 2018-10-18 16:06:29 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2018-10-18 16:06:29 --> Session: Class initialized using 'files' driver.
+INFO - 2018-10-18 16:06:29 --> User Agent Class Initialized
+INFO - 2018-10-18 16:06:29 --> Controller Class Initialized
+INFO - 2018-10-18 16:06:29 --> Language file loaded: language/en/common_lang.php
+INFO - 2018-10-18 16:06:29 --> Language file loaded: language/en/form_validation_lang.php
+INFO - 2018-10-18 16:06:30 --> Config Class Initialized
+INFO - 2018-10-18 16:06:30 --> Hooks Class Initialized
+DEBUG - 2018-10-18 16:06:30 --> UTF-8 Support Enabled
+INFO - 2018-10-18 16:06:30 --> Utf8 Class Initialized
+INFO - 2018-10-18 16:06:30 --> URI Class Initialized
+INFO - 2018-10-18 16:06:30 --> Router Class Initialized
+INFO - 2018-10-18 16:06:30 --> Output Class Initialized
+INFO - 2018-10-18 16:06:30 --> Security Class Initialized
+DEBUG - 2018-10-18 16:06:30 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-10-18 16:06:30 --> CSRF cookie sent
+INFO - 2018-10-18 16:06:30 --> Input Class Initialized
+INFO - 2018-10-18 16:06:30 --> Language Class Initialized
+INFO - 2018-10-18 16:06:30 --> Loader Class Initialized
+INFO - 2018-10-18 16:06:30 --> Helper loaded: url_helper
+INFO - 2018-10-18 16:06:30 --> Helper loaded: form_helper
+INFO - 2018-10-18 16:06:30 --> Helper loaded: language_helper
+DEBUG - 2018-10-18 16:06:31 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2018-10-18 16:06:31 --> Session: Class initialized using 'files' driver.
+INFO - 2018-10-18 16:06:31 --> User Agent Class Initialized
+INFO - 2018-10-18 16:06:31 --> Controller Class Initialized
+INFO - 2018-10-18 16:06:31 --> Language file loaded: language/en/common_lang.php
+INFO - 2018-10-18 16:06:31 --> Language file loaded: language/en/form_validation_lang.php
+DEBUG - 2018-10-18 16:06:31 --> Config file loaded: F:\xampp\htdocs\famiquity\application\config/recaptcha.php
+INFO - 2018-10-18 16:06:31 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_basic_nav.php
+INFO - 2018-10-18 16:06:31 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_end_user_nav.php
+INFO - 2018-10-18 16:06:31 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_header.php
+INFO - 2018-10-18 16:06:31 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_page_banner_empty.php
+INFO - 2018-10-18 16:06:31 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_page_header.php
+ERROR - 2018-10-18 16:06:31 --> Could not find the language line "req_email"
+INFO - 2018-10-18 16:06:31 --> File loaded: F:\xampp\htdocs\famiquity\application\views\myaccount/signin.php
+INFO - 2018-10-18 16:06:31 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_footer.php
+INFO - 2018-10-18 16:06:31 --> Final output sent to browser
+DEBUG - 2018-10-18 16:06:31 --> Total execution time: 1.9188
+INFO - 2018-10-18 16:07:54 --> Config Class Initialized
+INFO - 2018-10-18 16:07:54 --> Hooks Class Initialized
+DEBUG - 2018-10-18 16:07:54 --> UTF-8 Support Enabled
+INFO - 2018-10-18 16:07:54 --> Utf8 Class Initialized
+INFO - 2018-10-18 16:07:54 --> URI Class Initialized
+INFO - 2018-10-18 16:07:54 --> Router Class Initialized
+INFO - 2018-10-18 16:07:54 --> Output Class Initialized
+INFO - 2018-10-18 16:07:54 --> Security Class Initialized
+DEBUG - 2018-10-18 16:07:54 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-10-18 16:07:54 --> CSRF cookie sent
+INFO - 2018-10-18 16:07:54 --> Input Class Initialized
+INFO - 2018-10-18 16:07:54 --> Language Class Initialized
+INFO - 2018-10-18 16:07:54 --> Loader Class Initialized
+INFO - 2018-10-18 16:07:54 --> Helper loaded: url_helper
+INFO - 2018-10-18 16:07:54 --> Helper loaded: form_helper
+INFO - 2018-10-18 16:07:54 --> Helper loaded: language_helper
+DEBUG - 2018-10-18 16:07:54 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2018-10-18 16:07:54 --> Session: Class initialized using 'files' driver.
+INFO - 2018-10-18 16:07:54 --> User Agent Class Initialized
+INFO - 2018-10-18 16:07:54 --> Controller Class Initialized
+INFO - 2018-10-18 16:07:54 --> Language file loaded: language/en/common_lang.php
+INFO - 2018-10-18 16:07:54 --> Language file loaded: language/en/form_validation_lang.php
+INFO - 2018-10-18 16:07:55 --> Pixel_Model class loaded
+INFO - 2018-10-18 16:07:55 --> Database Driver Class Initialized
+INFO - 2018-10-18 16:07:55 --> Model "QuestionsModel" initialized
+INFO - 2018-10-18 16:07:55 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_basic_nav.php
+INFO - 2018-10-18 16:07:55 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_end_user_nav.php
+INFO - 2018-10-18 16:07:55 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_header.php
+INFO - 2018-10-18 16:07:55 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_page_banner_empty.php
+INFO - 2018-10-18 16:07:55 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_page_header.php
+INFO - 2018-10-18 16:07:55 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_bar.php
+INFO - 2018-10-18 16:07:55 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_buttons.php
+INFO - 2018-10-18 16:07:55 --> File loaded: F:\xampp\htdocs\famiquity\application\views\questions/start_questions.php
+INFO - 2018-10-18 16:07:55 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_footer.php
+INFO - 2018-10-18 16:07:55 --> Final output sent to browser
+DEBUG - 2018-10-18 16:07:55 --> Total execution time: 1.2434
+INFO - 2018-10-18 16:08:05 --> Config Class Initialized
+INFO - 2018-10-18 16:08:05 --> Hooks Class Initialized
+DEBUG - 2018-10-18 16:08:05 --> UTF-8 Support Enabled
+INFO - 2018-10-18 16:08:05 --> Utf8 Class Initialized
+INFO - 2018-10-18 16:08:05 --> URI Class Initialized
+INFO - 2018-10-18 16:08:05 --> Router Class Initialized
+INFO - 2018-10-18 16:08:05 --> Output Class Initialized
+INFO - 2018-10-18 16:08:06 --> Security Class Initialized
+DEBUG - 2018-10-18 16:08:06 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-10-18 16:08:06 --> CSRF cookie sent
+INFO - 2018-10-18 16:08:06 --> CSRF token verified
+INFO - 2018-10-18 16:08:06 --> Input Class Initialized
+INFO - 2018-10-18 16:08:06 --> Language Class Initialized
+INFO - 2018-10-18 16:08:06 --> Loader Class Initialized
+INFO - 2018-10-18 16:08:06 --> Helper loaded: url_helper
+INFO - 2018-10-18 16:08:06 --> Helper loaded: form_helper
+INFO - 2018-10-18 16:08:06 --> Helper loaded: language_helper
+DEBUG - 2018-10-18 16:08:06 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2018-10-18 16:08:06 --> Session: Class initialized using 'files' driver.
+INFO - 2018-10-18 16:08:06 --> User Agent Class Initialized
+INFO - 2018-10-18 16:08:06 --> Controller Class Initialized
+INFO - 2018-10-18 16:08:06 --> Language file loaded: language/en/common_lang.php
+INFO - 2018-10-18 16:08:06 --> Language file loaded: language/en/form_validation_lang.php
+INFO - 2018-10-18 16:08:06 --> Pixel_Model class loaded
+INFO - 2018-10-18 16:08:06 --> Database Driver Class Initialized
+INFO - 2018-10-18 16:08:06 --> Model "QuestionsModel" initialized
+INFO - 2018-10-18 16:08:06 --> Form Validation Class Initialized
+INFO - 2018-10-18 16:08:07 --> Language file loaded: language/english/form_validation_lang.php
+INFO - 2018-10-18 16:08:07 --> Database Driver Class Initialized
+INFO - 2018-10-18 16:08:07 --> Model "QuestionsModel" initialized
+INFO - 2018-10-18 16:08:07 --> Config Class Initialized
+INFO - 2018-10-18 16:08:07 --> Hooks Class Initialized
+DEBUG - 2018-10-18 16:08:07 --> UTF-8 Support Enabled
+INFO - 2018-10-18 16:08:07 --> Utf8 Class Initialized
+INFO - 2018-10-18 16:08:07 --> URI Class Initialized
+INFO - 2018-10-18 16:08:07 --> Router Class Initialized
+INFO - 2018-10-18 16:08:07 --> Output Class Initialized
+INFO - 2018-10-18 16:08:07 --> Security Class Initialized
+DEBUG - 2018-10-18 16:08:07 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-10-18 16:08:07 --> CSRF cookie sent
+INFO - 2018-10-18 16:08:07 --> Input Class Initialized
+INFO - 2018-10-18 16:08:07 --> Language Class Initialized
+INFO - 2018-10-18 16:08:07 --> Loader Class Initialized
+INFO - 2018-10-18 16:08:07 --> Helper loaded: url_helper
+INFO - 2018-10-18 16:08:08 --> Helper loaded: form_helper
+INFO - 2018-10-18 16:08:08 --> Helper loaded: language_helper
+DEBUG - 2018-10-18 16:08:08 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2018-10-18 16:08:08 --> Session: Class initialized using 'files' driver.
+INFO - 2018-10-18 16:08:08 --> User Agent Class Initialized
+INFO - 2018-10-18 16:08:08 --> Controller Class Initialized
+INFO - 2018-10-18 16:08:08 --> Language file loaded: language/en/common_lang.php
+INFO - 2018-10-18 16:08:08 --> Language file loaded: language/en/form_validation_lang.php
+INFO - 2018-10-18 16:08:08 --> Pixel_Model class loaded
+INFO - 2018-10-18 16:08:08 --> Database Driver Class Initialized
+INFO - 2018-10-18 16:08:08 --> Model "QuestionsModel" initialized
+INFO - 2018-10-18 16:08:08 --> Database Driver Class Initialized
+INFO - 2018-10-18 16:08:08 --> Model "QuestionsModel" initialized
+INFO - 2018-10-18 16:08:08 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_basic_nav.php
+INFO - 2018-10-18 16:08:08 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_end_user_nav.php
+INFO - 2018-10-18 16:08:08 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_header.php
+INFO - 2018-10-18 16:08:08 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_page_banner_empty.php
+INFO - 2018-10-18 16:08:08 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_page_header.php
+INFO - 2018-10-18 16:08:08 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_bar.php
+INFO - 2018-10-18 16:08:09 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_buttons.php
+INFO - 2018-10-18 16:08:09 --> File loaded: F:\xampp\htdocs\famiquity\application\views\questions/people_confide.php
+INFO - 2018-10-18 16:08:09 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_footer.php
+INFO - 2018-10-18 16:08:09 --> Final output sent to browser
+DEBUG - 2018-10-18 16:08:09 --> Total execution time: 1.9186
+INFO - 2018-10-18 16:08:47 --> Config Class Initialized
+INFO - 2018-10-18 16:08:47 --> Hooks Class Initialized
+DEBUG - 2018-10-18 16:08:47 --> UTF-8 Support Enabled
+INFO - 2018-10-18 16:08:47 --> Utf8 Class Initialized
+INFO - 2018-10-18 16:08:47 --> URI Class Initialized
+INFO - 2018-10-18 16:08:47 --> Router Class Initialized
+INFO - 2018-10-18 16:08:47 --> Output Class Initialized
+INFO - 2018-10-18 16:08:47 --> Security Class Initialized
+DEBUG - 2018-10-18 16:08:47 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-10-18 16:08:47 --> CSRF cookie sent
+INFO - 2018-10-18 16:08:47 --> Input Class Initialized
+INFO - 2018-10-18 16:08:47 --> Language Class Initialized
+INFO - 2018-10-18 16:08:47 --> Loader Class Initialized
+INFO - 2018-10-18 16:08:47 --> Helper loaded: url_helper
+INFO - 2018-10-18 16:08:47 --> Helper loaded: form_helper
+INFO - 2018-10-18 16:08:47 --> Helper loaded: language_helper
+DEBUG - 2018-10-18 16:08:47 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2018-10-18 16:08:47 --> Session: Class initialized using 'files' driver.
+INFO - 2018-10-18 16:08:47 --> User Agent Class Initialized
+INFO - 2018-10-18 16:08:47 --> Controller Class Initialized
+INFO - 2018-10-18 16:08:47 --> Language file loaded: language/en/common_lang.php
+INFO - 2018-10-18 16:08:47 --> Language file loaded: language/en/form_validation_lang.php
+INFO - 2018-10-18 16:08:47 --> Config Class Initialized
+INFO - 2018-10-18 16:08:47 --> Hooks Class Initialized
+DEBUG - 2018-10-18 16:08:48 --> UTF-8 Support Enabled
+INFO - 2018-10-18 16:08:48 --> Utf8 Class Initialized
+INFO - 2018-10-18 16:08:48 --> URI Class Initialized
+INFO - 2018-10-18 16:08:48 --> Router Class Initialized
+INFO - 2018-10-18 16:08:48 --> Output Class Initialized
+INFO - 2018-10-18 16:08:48 --> Security Class Initialized
+DEBUG - 2018-10-18 16:08:48 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-10-18 16:08:48 --> CSRF cookie sent
+INFO - 2018-10-18 16:08:48 --> Input Class Initialized
+INFO - 2018-10-18 16:08:48 --> Language Class Initialized
+INFO - 2018-10-18 16:08:48 --> Loader Class Initialized
+INFO - 2018-10-18 16:08:48 --> Helper loaded: url_helper
+INFO - 2018-10-18 16:08:48 --> Helper loaded: form_helper
+INFO - 2018-10-18 16:08:48 --> Helper loaded: language_helper
+DEBUG - 2018-10-18 16:08:48 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2018-10-18 16:08:48 --> Session: Class initialized using 'files' driver.
+INFO - 2018-10-18 16:08:48 --> User Agent Class Initialized
+INFO - 2018-10-18 16:08:48 --> Controller Class Initialized
+INFO - 2018-10-18 16:08:48 --> Language file loaded: language/en/common_lang.php
+INFO - 2018-10-18 16:08:48 --> Language file loaded: language/en/form_validation_lang.php
+DEBUG - 2018-10-18 16:08:48 --> Config file loaded: F:\xampp\htdocs\famiquity\application\config/recaptcha.php
+INFO - 2018-10-18 16:08:48 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_basic_nav.php
+INFO - 2018-10-18 16:08:48 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_end_user_nav.php
+INFO - 2018-10-18 16:08:48 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_header.php
+INFO - 2018-10-18 16:08:48 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_page_banner_empty.php
+INFO - 2018-10-18 16:08:48 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_page_header.php
+ERROR - 2018-10-18 16:08:48 --> Could not find the language line "req_email"
+INFO - 2018-10-18 16:08:48 --> File loaded: F:\xampp\htdocs\famiquity\application\views\myaccount/signin.php
+INFO - 2018-10-18 16:08:49 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_footer.php
+INFO - 2018-10-18 16:08:49 --> Final output sent to browser
+DEBUG - 2018-10-18 16:08:49 --> Total execution time: 1.0942
+INFO - 2018-10-18 16:08:55 --> Config Class Initialized
+INFO - 2018-10-18 16:08:55 --> Hooks Class Initialized
+DEBUG - 2018-10-18 16:08:55 --> UTF-8 Support Enabled
+INFO - 2018-10-18 16:08:55 --> Utf8 Class Initialized
+INFO - 2018-10-18 16:08:55 --> URI Class Initialized
+INFO - 2018-10-18 16:08:55 --> Router Class Initialized
+INFO - 2018-10-18 16:08:55 --> Output Class Initialized
+INFO - 2018-10-18 16:08:55 --> Security Class Initialized
+DEBUG - 2018-10-18 16:08:55 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-10-18 16:08:55 --> CSRF cookie sent
+INFO - 2018-10-18 16:08:56 --> Input Class Initialized
+INFO - 2018-10-18 16:08:56 --> Language Class Initialized
+INFO - 2018-10-18 16:08:56 --> Loader Class Initialized
+INFO - 2018-10-18 16:08:56 --> Helper loaded: url_helper
+INFO - 2018-10-18 16:08:56 --> Helper loaded: form_helper
+INFO - 2018-10-18 16:08:56 --> Helper loaded: language_helper
+DEBUG - 2018-10-18 16:08:56 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2018-10-18 16:08:56 --> Session: Class initialized using 'files' driver.
+INFO - 2018-10-18 16:08:56 --> User Agent Class Initialized
+INFO - 2018-10-18 16:08:56 --> Controller Class Initialized
+INFO - 2018-10-18 16:08:56 --> Language file loaded: language/en/common_lang.php
+INFO - 2018-10-18 16:08:56 --> Language file loaded: language/en/form_validation_lang.php
+INFO - 2018-10-18 16:08:56 --> Config Class Initialized
+INFO - 2018-10-18 16:08:56 --> Hooks Class Initialized
+DEBUG - 2018-10-18 16:08:56 --> UTF-8 Support Enabled
+INFO - 2018-10-18 16:08:56 --> Utf8 Class Initialized
+INFO - 2018-10-18 16:08:56 --> URI Class Initialized
+INFO - 2018-10-18 16:08:56 --> Router Class Initialized
+INFO - 2018-10-18 16:08:56 --> Output Class Initialized
+INFO - 2018-10-18 16:08:56 --> Security Class Initialized
+DEBUG - 2018-10-18 16:08:56 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-10-18 16:08:56 --> CSRF cookie sent
+INFO - 2018-10-18 16:08:57 --> Input Class Initialized
+INFO - 2018-10-18 16:08:57 --> Language Class Initialized
+INFO - 2018-10-18 16:08:57 --> Loader Class Initialized
+INFO - 2018-10-18 16:08:57 --> Helper loaded: url_helper
+INFO - 2018-10-18 16:08:57 --> Helper loaded: form_helper
+INFO - 2018-10-18 16:08:57 --> Helper loaded: language_helper
+DEBUG - 2018-10-18 16:08:57 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2018-10-18 16:08:57 --> Session: Class initialized using 'files' driver.
+INFO - 2018-10-18 16:08:57 --> User Agent Class Initialized
+INFO - 2018-10-18 16:08:57 --> Controller Class Initialized
+INFO - 2018-10-18 16:08:57 --> Language file loaded: language/en/common_lang.php
+INFO - 2018-10-18 16:08:57 --> Language file loaded: language/en/form_validation_lang.php
+DEBUG - 2018-10-18 16:08:57 --> Config file loaded: F:\xampp\htdocs\famiquity\application\config/recaptcha.php
+INFO - 2018-10-18 16:08:57 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_basic_nav.php
+INFO - 2018-10-18 16:08:57 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_end_user_nav.php
+INFO - 2018-10-18 16:08:57 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_header.php
+INFO - 2018-10-18 16:08:57 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_page_banner_empty.php
+INFO - 2018-10-18 16:08:57 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_page_header.php
+ERROR - 2018-10-18 16:08:57 --> Could not find the language line "req_email"
+INFO - 2018-10-18 16:08:57 --> File loaded: F:\xampp\htdocs\famiquity\application\views\myaccount/signin.php
+INFO - 2018-10-18 16:08:58 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_footer.php
+INFO - 2018-10-18 16:08:58 --> Final output sent to browser
+DEBUG - 2018-10-18 16:08:58 --> Total execution time: 1.4500
+INFO - 2018-10-18 16:09:32 --> Config Class Initialized
+INFO - 2018-10-18 16:09:32 --> Hooks Class Initialized
+DEBUG - 2018-10-18 16:09:32 --> UTF-8 Support Enabled
+INFO - 2018-10-18 16:09:32 --> Utf8 Class Initialized
+INFO - 2018-10-18 16:09:33 --> URI Class Initialized
+INFO - 2018-10-18 16:09:33 --> Router Class Initialized
+INFO - 2018-10-18 16:09:33 --> Output Class Initialized
+INFO - 2018-10-18 16:09:33 --> Security Class Initialized
+DEBUG - 2018-10-18 16:09:33 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-10-18 16:09:33 --> CSRF cookie sent
+INFO - 2018-10-18 16:09:33 --> Input Class Initialized
+INFO - 2018-10-18 16:09:33 --> Language Class Initialized
+INFO - 2018-10-18 16:09:33 --> Loader Class Initialized
+INFO - 2018-10-18 16:09:33 --> Helper loaded: url_helper
+INFO - 2018-10-18 16:09:33 --> Helper loaded: form_helper
+INFO - 2018-10-18 16:09:33 --> Helper loaded: language_helper
+DEBUG - 2018-10-18 16:09:33 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2018-10-18 16:09:33 --> Session: Class initialized using 'files' driver.
+INFO - 2018-10-18 16:09:33 --> User Agent Class Initialized
+INFO - 2018-10-18 16:09:33 --> Controller Class Initialized
+INFO - 2018-10-18 16:09:33 --> Language file loaded: language/en/common_lang.php
+INFO - 2018-10-18 16:09:33 --> Language file loaded: language/en/form_validation_lang.php
+INFO - 2018-10-18 16:09:33 --> CSRF cookie sent
+INFO - 2018-10-18 16:09:33 --> Config Class Initialized
+INFO - 2018-10-18 16:09:33 --> Hooks Class Initialized
+DEBUG - 2018-10-18 16:09:33 --> UTF-8 Support Enabled
+INFO - 2018-10-18 16:09:33 --> Utf8 Class Initialized
+INFO - 2018-10-18 16:09:33 --> URI Class Initialized
+DEBUG - 2018-10-18 16:09:34 --> No URI present. Default controller set.
+INFO - 2018-10-18 16:09:34 --> Router Class Initialized
+INFO - 2018-10-18 16:09:34 --> Output Class Initialized
+INFO - 2018-10-18 16:09:34 --> Security Class Initialized
+DEBUG - 2018-10-18 16:09:34 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-10-18 16:09:34 --> CSRF cookie sent
+INFO - 2018-10-18 16:09:34 --> Input Class Initialized
+INFO - 2018-10-18 16:09:34 --> Language Class Initialized
+INFO - 2018-10-18 16:09:34 --> Loader Class Initialized
+INFO - 2018-10-18 16:09:34 --> Helper loaded: url_helper
+INFO - 2018-10-18 16:09:34 --> Helper loaded: form_helper
+INFO - 2018-10-18 16:09:34 --> Helper loaded: language_helper
+DEBUG - 2018-10-18 16:09:34 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2018-10-18 16:09:34 --> Session: Class initialized using 'files' driver.
+INFO - 2018-10-18 16:09:34 --> User Agent Class Initialized
+INFO - 2018-10-18 16:09:34 --> Controller Class Initialized
+INFO - 2018-10-18 16:09:34 --> Language file loaded: language/en/common_lang.php
+INFO - 2018-10-18 16:09:34 --> Language file loaded: language/en/form_validation_lang.php
+INFO - 2018-10-18 16:09:34 --> Pixel_Model class loaded
+INFO - 2018-10-18 16:09:34 --> Database Driver Class Initialized
+INFO - 2018-10-18 16:09:34 --> Model "QuestionsModel" initialized
+INFO - 2018-10-18 16:09:34 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_basic_nav.php
+INFO - 2018-10-18 16:09:34 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_header.php
+INFO - 2018-10-18 16:09:34 --> File loaded: F:\xampp\htdocs\famiquity\application\views\home.php
+INFO - 2018-10-18 16:09:34 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_footer.php
+INFO - 2018-10-18 16:09:34 --> Final output sent to browser
+DEBUG - 2018-10-18 16:09:35 --> Total execution time: 1.1117
+INFO - 2018-10-18 16:09:39 --> Config Class Initialized
+INFO - 2018-10-18 16:09:39 --> Hooks Class Initialized
+DEBUG - 2018-10-18 16:09:40 --> UTF-8 Support Enabled
+INFO - 2018-10-18 16:09:40 --> Utf8 Class Initialized
+INFO - 2018-10-18 16:09:40 --> URI Class Initialized
+INFO - 2018-10-18 16:09:40 --> Router Class Initialized
+INFO - 2018-10-18 16:09:40 --> Output Class Initialized
+INFO - 2018-10-18 16:09:40 --> Security Class Initialized
+DEBUG - 2018-10-18 16:09:40 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-10-18 16:09:40 --> CSRF cookie sent
+INFO - 2018-10-18 16:09:40 --> Input Class Initialized
+INFO - 2018-10-18 16:09:40 --> Language Class Initialized
+INFO - 2018-10-18 16:09:40 --> Loader Class Initialized
+INFO - 2018-10-18 16:09:40 --> Helper loaded: url_helper
+INFO - 2018-10-18 16:09:40 --> Helper loaded: form_helper
+INFO - 2018-10-18 16:09:40 --> Helper loaded: language_helper
+DEBUG - 2018-10-18 16:09:40 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2018-10-18 16:09:40 --> Session: Class initialized using 'files' driver.
+INFO - 2018-10-18 16:09:40 --> User Agent Class Initialized
+INFO - 2018-10-18 16:09:40 --> Controller Class Initialized
+INFO - 2018-10-18 16:09:40 --> Language file loaded: language/en/common_lang.php
+INFO - 2018-10-18 16:09:40 --> Language file loaded: language/en/form_validation_lang.php
+INFO - 2018-10-18 16:09:41 --> Pixel_Model class loaded
+INFO - 2018-10-18 16:09:41 --> Database Driver Class Initialized
+INFO - 2018-10-18 16:09:41 --> Model "RegistrationModel" initialized
+DEBUG - 2018-10-18 16:09:41 --> Config file loaded: F:\xampp\htdocs\famiquity\application\config/recaptcha.php
+INFO - 2018-10-18 16:09:41 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_basic_nav.php
+INFO - 2018-10-18 16:09:41 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_header.php
+INFO - 2018-10-18 16:09:41 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_page_banner_empty.php
+INFO - 2018-10-18 16:09:41 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_page_header.php
+ERROR - 2018-10-18 16:09:41 --> Could not find the language line "req_email"
+INFO - 2018-10-18 16:09:41 --> File loaded: F:\xampp\htdocs\famiquity\application\views\register/signup.php
+INFO - 2018-10-18 16:09:41 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_footer.php
+INFO - 2018-10-18 16:09:41 --> Final output sent to browser
+DEBUG - 2018-10-18 16:09:41 --> Total execution time: 1.6914
+INFO - 2018-10-18 16:10:25 --> Config Class Initialized
+INFO - 2018-10-18 16:10:25 --> Hooks Class Initialized
+DEBUG - 2018-10-18 16:10:25 --> UTF-8 Support Enabled
+INFO - 2018-10-18 16:10:25 --> Utf8 Class Initialized
+INFO - 2018-10-18 16:10:25 --> URI Class Initialized
+INFO - 2018-10-18 16:10:25 --> Router Class Initialized
+INFO - 2018-10-18 16:10:25 --> Output Class Initialized
+INFO - 2018-10-18 16:10:25 --> Security Class Initialized
+DEBUG - 2018-10-18 16:10:25 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-10-18 16:10:25 --> CSRF cookie sent
+INFO - 2018-10-18 16:10:25 --> CSRF token verified
+INFO - 2018-10-18 16:10:25 --> Input Class Initialized
+INFO - 2018-10-18 16:10:25 --> Language Class Initialized
+INFO - 2018-10-18 16:10:25 --> Loader Class Initialized
+INFO - 2018-10-18 16:10:25 --> Helper loaded: url_helper
+INFO - 2018-10-18 16:10:25 --> Helper loaded: form_helper
+INFO - 2018-10-18 16:10:25 --> Helper loaded: language_helper
+DEBUG - 2018-10-18 16:10:25 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2018-10-18 16:10:25 --> Session: Class initialized using 'files' driver.
+INFO - 2018-10-18 16:10:25 --> User Agent Class Initialized
+INFO - 2018-10-18 16:10:25 --> Controller Class Initialized
+INFO - 2018-10-18 16:10:25 --> Language file loaded: language/en/common_lang.php
+INFO - 2018-10-18 16:10:25 --> Language file loaded: language/en/form_validation_lang.php
+DEBUG - 2018-10-18 16:10:25 --> Config file loaded: F:\xampp\htdocs\famiquity\application\config/recaptcha.php
+INFO - 2018-10-18 16:10:26 --> Config Class Initialized
+INFO - 2018-10-18 16:10:26 --> Hooks Class Initialized
+DEBUG - 2018-10-18 16:10:26 --> UTF-8 Support Enabled
+INFO - 2018-10-18 16:10:26 --> Utf8 Class Initialized
+INFO - 2018-10-18 16:10:26 --> URI Class Initialized
+INFO - 2018-10-18 16:10:26 --> Router Class Initialized
+INFO - 2018-10-18 16:10:26 --> Output Class Initialized
+INFO - 2018-10-18 16:10:26 --> Security Class Initialized
+DEBUG - 2018-10-18 16:10:26 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-10-18 16:10:26 --> CSRF cookie sent
+INFO - 2018-10-18 16:10:26 --> Input Class Initialized
+INFO - 2018-10-18 16:10:26 --> Language Class Initialized
+INFO - 2018-10-18 16:10:26 --> Loader Class Initialized
+INFO - 2018-10-18 16:10:26 --> Helper loaded: url_helper
+INFO - 2018-10-18 16:10:26 --> Helper loaded: form_helper
+INFO - 2018-10-18 16:10:26 --> Helper loaded: language_helper
+DEBUG - 2018-10-18 16:10:26 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2018-10-18 16:10:26 --> Session: Class initialized using 'files' driver.
+INFO - 2018-10-18 16:10:26 --> User Agent Class Initialized
+INFO - 2018-10-18 16:10:26 --> Controller Class Initialized
+INFO - 2018-10-18 16:10:26 --> Language file loaded: language/en/common_lang.php
+INFO - 2018-10-18 16:10:26 --> Language file loaded: language/en/form_validation_lang.php
+INFO - 2018-10-18 16:10:26 --> Pixel_Model class loaded
+INFO - 2018-10-18 16:10:26 --> Database Driver Class Initialized
+INFO - 2018-10-18 16:10:26 --> Model "RegistrationModel" initialized
+DEBUG - 2018-10-18 16:10:26 --> Config file loaded: F:\xampp\htdocs\famiquity\application\config/recaptcha.php
+INFO - 2018-10-18 16:10:27 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_basic_nav.php
+INFO - 2018-10-18 16:10:27 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_header.php
+INFO - 2018-10-18 16:10:27 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_page_banner_empty.php
+INFO - 2018-10-18 16:10:27 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_page_header.php
+INFO - 2018-10-18 16:10:27 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_soft_error.php
+ERROR - 2018-10-18 16:10:27 --> Could not find the language line "req_email"
+INFO - 2018-10-18 16:10:27 --> File loaded: F:\xampp\htdocs\famiquity\application\views\register/signup.php
+INFO - 2018-10-18 16:10:27 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_footer.php
+INFO - 2018-10-18 16:10:27 --> Final output sent to browser
+DEBUG - 2018-10-18 16:10:27 --> Total execution time: 1.2442
+INFO - 2018-10-18 16:11:38 --> Config Class Initialized
+INFO - 2018-10-18 16:11:38 --> Hooks Class Initialized
+DEBUG - 2018-10-18 16:11:38 --> UTF-8 Support Enabled
+INFO - 2018-10-18 16:11:38 --> Utf8 Class Initialized
+INFO - 2018-10-18 16:11:38 --> URI Class Initialized
+INFO - 2018-10-18 16:11:38 --> Router Class Initialized
+INFO - 2018-10-18 16:11:38 --> Output Class Initialized
+INFO - 2018-10-18 16:11:38 --> Security Class Initialized
+DEBUG - 2018-10-18 16:11:38 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-10-18 16:11:38 --> CSRF cookie sent
+INFO - 2018-10-18 16:11:38 --> Input Class Initialized
+INFO - 2018-10-18 16:11:38 --> Language Class Initialized
+INFO - 2018-10-18 16:11:38 --> Loader Class Initialized
+INFO - 2018-10-18 16:11:38 --> Helper loaded: url_helper
+INFO - 2018-10-18 16:11:38 --> Helper loaded: form_helper
+INFO - 2018-10-18 16:11:38 --> Helper loaded: language_helper
+DEBUG - 2018-10-18 16:11:38 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2018-10-18 16:11:38 --> Session: Class initialized using 'files' driver.
+INFO - 2018-10-18 16:11:38 --> User Agent Class Initialized
+INFO - 2018-10-18 16:11:38 --> Controller Class Initialized
+INFO - 2018-10-18 16:11:38 --> Language file loaded: language/en/common_lang.php
+INFO - 2018-10-18 16:11:39 --> Language file loaded: language/en/form_validation_lang.php
+INFO - 2018-10-18 16:11:39 --> Pixel_Model class loaded
+INFO - 2018-10-18 16:11:39 --> Database Driver Class Initialized
+INFO - 2018-10-18 16:11:39 --> Model "RegistrationModel" initialized
+DEBUG - 2018-10-18 16:11:39 --> Config file loaded: F:\xampp\htdocs\famiquity\application\config/recaptcha.php
+INFO - 2018-10-18 16:11:39 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_basic_nav.php
+INFO - 2018-10-18 16:11:39 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_header.php
+INFO - 2018-10-18 16:11:39 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_page_banner_empty.php
+INFO - 2018-10-18 16:11:39 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_page_header.php
+ERROR - 2018-10-18 16:11:39 --> Could not find the language line "req_email"
+INFO - 2018-10-18 16:11:39 --> File loaded: F:\xampp\htdocs\famiquity\application\views\register/signup.php
+INFO - 2018-10-18 16:11:39 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_footer.php
+INFO - 2018-10-18 16:11:39 --> Final output sent to browser
+DEBUG - 2018-10-18 16:11:39 --> Total execution time: 1.5100
+INFO - 2018-10-18 16:16:02 --> Config Class Initialized
+INFO - 2018-10-18 16:16:02 --> Hooks Class Initialized
+DEBUG - 2018-10-18 16:16:02 --> UTF-8 Support Enabled
+INFO - 2018-10-18 16:16:03 --> Utf8 Class Initialized
+INFO - 2018-10-18 16:16:03 --> URI Class Initialized
+INFO - 2018-10-18 16:16:03 --> Router Class Initialized
+INFO - 2018-10-18 16:16:03 --> Output Class Initialized
+INFO - 2018-10-18 16:16:03 --> Security Class Initialized
+DEBUG - 2018-10-18 16:16:03 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-10-18 16:16:03 --> CSRF cookie sent
+INFO - 2018-10-18 16:16:03 --> Input Class Initialized
+INFO - 2018-10-18 16:16:03 --> Language Class Initialized
+INFO - 2018-10-18 16:16:03 --> Loader Class Initialized
+INFO - 2018-10-18 16:16:03 --> Helper loaded: url_helper
+INFO - 2018-10-18 16:16:03 --> Helper loaded: form_helper
+INFO - 2018-10-18 16:16:03 --> Helper loaded: language_helper
+DEBUG - 2018-10-18 16:16:03 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2018-10-18 16:16:03 --> Session: Class initialized using 'files' driver.
+INFO - 2018-10-18 16:16:03 --> User Agent Class Initialized
+INFO - 2018-10-18 16:16:03 --> Controller Class Initialized
+INFO - 2018-10-18 16:16:03 --> Language file loaded: language/en/common_lang.php
+INFO - 2018-10-18 16:16:03 --> Language file loaded: language/en/form_validation_lang.php
+INFO - 2018-10-18 16:16:03 --> Pixel_Model class loaded
+INFO - 2018-10-18 16:16:03 --> Database Driver Class Initialized
+INFO - 2018-10-18 16:16:03 --> Model "RegistrationModel" initialized
+DEBUG - 2018-10-18 16:16:04 --> Config file loaded: F:\xampp\htdocs\famiquity\application\config/recaptcha.php
+INFO - 2018-10-18 16:16:04 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_basic_nav.php
+INFO - 2018-10-18 16:16:04 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_header.php
+INFO - 2018-10-18 16:16:04 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_page_banner_empty.php
+INFO - 2018-10-18 16:16:04 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_page_header.php
+ERROR - 2018-10-18 16:16:04 --> Could not find the language line "req_email"
+INFO - 2018-10-18 16:16:04 --> File loaded: F:\xampp\htdocs\famiquity\application\views\register/signup.php
+INFO - 2018-10-18 16:16:04 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_footer.php
+INFO - 2018-10-18 16:16:04 --> Final output sent to browser
+DEBUG - 2018-10-18 16:16:04 --> Total execution time: 1.5775
+INFO - 2018-10-18 16:17:55 --> Config Class Initialized
+INFO - 2018-10-18 16:17:55 --> Hooks Class Initialized
+DEBUG - 2018-10-18 16:17:55 --> UTF-8 Support Enabled
+INFO - 2018-10-18 16:17:55 --> Utf8 Class Initialized
+INFO - 2018-10-18 16:17:55 --> URI Class Initialized
+INFO - 2018-10-18 16:17:55 --> Router Class Initialized
+INFO - 2018-10-18 16:17:55 --> Output Class Initialized
+INFO - 2018-10-18 16:17:55 --> Security Class Initialized
+DEBUG - 2018-10-18 16:17:55 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-10-18 16:17:55 --> CSRF cookie sent
+INFO - 2018-10-18 16:17:55 --> Input Class Initialized
+INFO - 2018-10-18 16:17:55 --> Language Class Initialized
+INFO - 2018-10-18 16:17:55 --> Loader Class Initialized
+INFO - 2018-10-18 16:17:55 --> Helper loaded: url_helper
+INFO - 2018-10-18 16:17:55 --> Helper loaded: form_helper
+INFO - 2018-10-18 16:17:55 --> Helper loaded: language_helper
+DEBUG - 2018-10-18 16:17:55 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2018-10-18 16:17:55 --> Session: Class initialized using 'files' driver.
+INFO - 2018-10-18 16:17:55 --> User Agent Class Initialized
+INFO - 2018-10-18 16:17:55 --> Controller Class Initialized
+INFO - 2018-10-18 16:17:55 --> Language file loaded: language/en/common_lang.php
+INFO - 2018-10-18 16:17:55 --> Language file loaded: language/en/form_validation_lang.php
+INFO - 2018-10-18 16:17:56 --> Pixel_Model class loaded
+INFO - 2018-10-18 16:17:56 --> Database Driver Class Initialized
+INFO - 2018-10-18 16:17:56 --> Model "RegistrationModel" initialized
+DEBUG - 2018-10-18 16:17:56 --> Config file loaded: F:\xampp\htdocs\famiquity\application\config/recaptcha.php
+INFO - 2018-10-18 16:17:56 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_basic_nav.php
+INFO - 2018-10-18 16:17:56 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_header.php
+INFO - 2018-10-18 16:17:56 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_page_banner_empty.php
+INFO - 2018-10-18 16:17:56 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_page_header.php
+ERROR - 2018-10-18 16:17:56 --> Could not find the language line "req_email"
+INFO - 2018-10-18 16:17:56 --> File loaded: F:\xampp\htdocs\famiquity\application\views\register/signup.php
+INFO - 2018-10-18 16:17:56 --> File loaded: F:\xampp\htdocs\famiquity\application\views\shared/_footer.php
+INFO - 2018-10-18 16:17:56 --> Final output sent to browser
+DEBUG - 2018-10-18 16:17:56 --> Total execution time: 1.3980

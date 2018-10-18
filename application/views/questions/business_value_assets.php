@@ -15,7 +15,7 @@
                 <div id="register-form" class="register-form">
                     <div class="section-field">
                         <label><?php echo $this->labelArray['business_value_assets'];?></label>
-                        <div class="input-group">
+                        <div class ='field-widget'>
                             <input type="number" min="0" step="10000" class="form-control" required="required" autocomplete="off" name="business_value_assets"  value="<?php echo Smart::setValue('business_value_assets', $app->business_value_assets); ?>"
                                    data-message="<?php echo lang('req_gift_value') ?>" style="height: 48px;">
                                    <div class="input-group-btn help-select-list"> 
@@ -25,7 +25,7 @@
                     </div>
                     <div class="section-field">
                         <label><?php echo $this->labelArray['business_value_assets_spouse'];?></label>
-                        <div class="input-group">
+                        <div class ='field-widget'>
                             <input type="number" min="0" step="10000" class="form-control" required="required" autocomplete="off" name="business_value_assets_spouse"  value="<?php echo Smart::setValue('business_value_assets_spouse', $app->business_value_assets_spouse); ?>"
                                    data-message="<?php echo lang('req_gift_value') ?>" style="height: 48px;">
                                    <div class="input-group-btn help-select-list"> 

@@ -27,7 +27,7 @@
                     <br>
                     <div class="section-field">
                         <label><?php echo $this->labelArray['activities_cost'];?></label>
-                        <div class="input-group">
+                        <div class ='field-widget'>
                             <input type="number" min="0" step="500" class="web form-control" required="required"  
                             autocomplete="off" name="activities_cost"  value="<?php echo Smart::setValue('activities_cost', $app->activities_cost); ?>"
                             data-message="<?php echo lang('req_kids_activites_cost') ?>" style="height: 48px;">

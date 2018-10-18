@@ -26,7 +26,7 @@
                     </div>
                     <div class="section-field">
                         <label><?php echo $this->labelArray['trust_income_draw_amount'];?></label>
-                        <div class="input-group">
+                        <div class ='field-widget'>
                             <input type="number" min="0" step="10000" class="web form-control" required="required" autocomplete="off" name="trust_income_draw_amount"  value="<?php echo Smart::setValue('trust_income_draw_amount', $app->trust_income_draw_amount); ?>"
                                    data-message="<?php echo lang('req_gift_value') ?>" style="height: 48px;">
                                    <div class="input-group-btn help-select-list"> 

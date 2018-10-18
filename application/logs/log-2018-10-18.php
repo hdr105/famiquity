@@ -2680,6 +2680,8 @@ INFO - 2018-10-18 12:32:36 --> File loaded: F:\xampp\htdocs\famiquity\applicatio
 INFO - 2018-10-18 12:32:36 --> Final output sent to browser
 DEBUG - 2018-10-18 12:32:36 --> Total execution time: 0.6694
 =======
+=======
+>>>>>>> 4c5a3fb837b72a5ebe34152c40ec6a8ad1b51698
 INFO - 2018-10-18 12:42:16 --> Config Class Initialized
 INFO - 2018-10-18 12:42:16 --> Hooks Class Initialized
 DEBUG - 2018-10-18 12:42:17 --> UTF-8 Support Enabled
@@ -10023,4 +10025,7 @@ INFO - 2018-10-18 14:08:04 --> CSRF cookie sent
 INFO - 2018-10-18 14:08:04 --> Input Class Initialized
 INFO - 2018-10-18 14:08:04 --> Language Class Initialized
 ERROR - 2018-10-18 14:08:04 --> 404 Page Not Found: Assets/css
+<<<<<<< HEAD
+>>>>>>> 4c5a3fb837b72a5ebe34152c40ec6a8ad1b51698
+=======
 >>>>>>> 4c5a3fb837b72a5ebe34152c40ec6a8ad1b51698

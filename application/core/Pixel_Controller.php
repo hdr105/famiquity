@@ -26,6 +26,7 @@ class Pixel_Controller extends CI_Controller {
         setlocale(LC_ALL, $local);
         $now = new DateTime();
         $this->currentDate = $now->format('Y-m-d H:i:s');
+        $this->load->helper("custom");
     }
 
     public function getLanguage() {

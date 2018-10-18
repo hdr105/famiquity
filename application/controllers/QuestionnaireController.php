@@ -75,6 +75,14 @@ class QuestionnaireController extends Pixel_Controller {
             $object = new stdClass();
             $object->user_id = (int) $this->currentCustomer->id;
             $object->decision_id = $this->input->post('decision_id', TRUE);
+            // /$id =$this->input->post('decision_id', TRUE);
+
+            $decision_row = $this->model->get_decision($object->decision_id);
+            $decision =  $decision_row->name;
+            $this->session->set_userdata('life_decision',$decision);
+            
+         
+
             //$object->profession_id = $this->input->post('profession_id', TRUE);
             $object->start_date = $this->currentDate;
             $object->current_seo_uri = 'life-decision';

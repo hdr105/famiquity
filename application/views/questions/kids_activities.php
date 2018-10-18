@@ -13,6 +13,10 @@
                 echo Smart::formErrors();
                 ?>
                 <div id="register-form" class="register-form">
+                    <div>
+                    <h5>Life Decision : <?php echo $this->session->userdata('life_decision'); ?></h5>
+                    <hr>
+                  </div>
                     <div class="section-field">
                          <div class="input-group-btn help-select-list"> 
                             <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="top"  data-content="Extracurricular means paid activities like sports, music, special needs, etc"><i class="fa fa-2x fa-question-circle"></i></button>

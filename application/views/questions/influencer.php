@@ -13,6 +13,10 @@
                     echo Smart::formErrors();
                 ?>
                 <div id="register-form" class="register-form">
+                    <div>
+                    <h5>Life Decision : <?php echo $this->session->userdata('life_decision'); ?></h5>
+                    <hr>
+                  </div>
                     <div class="section-field">
                         <label>Who would you tell if you were unhappy with your partner?</label>
                         <div class="field-widget">

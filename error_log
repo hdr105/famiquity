@@ -1,0 +1,46 @@
+[23-Aug-2018 19:01:09 UTC] PHP Fatal error:  Call to a member function num_rows() on boolean in /home/fxp6bn7rqemh/public_html/application/models/QuestionsModel.php on line 25
+[27-Sep-2018 12:49:34 UTC] PHP Parse error:  syntax error, unexpected ',' in /home/fxp6bn7rqemh/public_html/application/views/questions/marriage.php on line 29
+[27-Sep-2018 12:49:37 UTC] PHP Parse error:  syntax error, unexpected ',' in /home/fxp6bn7rqemh/public_html/application/views/questions/marriage.php on line 29
+[27-Sep-2018 12:49:42 UTC] PHP Parse error:  syntax error, unexpected ',' in /home/fxp6bn7rqemh/public_html/application/views/questions/marriage.php on line 29
+[27-Sep-2018 12:49:50 UTC] PHP Parse error:  syntax error, unexpected ',' in /home/fxp6bn7rqemh/public_html/application/views/questions/marriage.php on line 29
+[27-Sep-2018 12:51:12 UTC] PHP Parse error:  syntax error, unexpected ',' in /home/fxp6bn7rqemh/public_html/application/views/questions/marriage.php on line 29
+[27-Sep-2018 12:51:15 UTC] PHP Parse error:  syntax error, unexpected ',' in /home/fxp6bn7rqemh/public_html/application/views/questions/marriage.php on line 29
+[27-Sep-2018 13:26:18 UTC] PHP Fatal error:  Call to undefined function rpost() in /home/fxp6bn7rqemh/public_html/application/views/questions/marriage.php on line 29
+[28-Sep-2018 14:43:50 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/fxp6bn7rqemh/public_html/application/views/questions/risk_report.php on line 40
+[28-Sep-2018 14:43:52 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/fxp6bn7rqemh/public_html/application/views/questions/risk_report.php on line 40
+[28-Sep-2018 14:44:42 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/fxp6bn7rqemh/public_html/application/views/questions/risk_report.php on line 40
+[09-Oct-2018 19:26:49 UTC] PHP Parse error:  syntax error, unexpected '$risk' (T_VARIABLE) in /home/fxp6bn7rqemh/public_html/application/libraries/Smart.php on line 608
+[09-Oct-2018 19:26:51 UTC] PHP Parse error:  syntax error, unexpected '$risk' (T_VARIABLE) in /home/fxp6bn7rqemh/public_html/application/libraries/Smart.php on line 608
+[09-Oct-2018 19:26:52 UTC] PHP Parse error:  syntax error, unexpected '$risk' (T_VARIABLE) in /home/fxp6bn7rqemh/public_html/application/libraries/Smart.php on line 608
+[09-Oct-2018 19:26:53 UTC] PHP Parse error:  syntax error, unexpected '$risk' (T_VARIABLE) in /home/fxp6bn7rqemh/public_html/application/libraries/Smart.php on line 608
+[09-Oct-2018 19:26:54 UTC] PHP Parse error:  syntax error, unexpected '$risk' (T_VARIABLE) in /home/fxp6bn7rqemh/public_html/application/libraries/Smart.php on line 608
+[09-Oct-2018 19:26:56 UTC] PHP Parse error:  syntax error, unexpected '$risk' (T_VARIABLE) in /home/fxp6bn7rqemh/public_html/application/libraries/Smart.php on line 608
+[09-Oct-2018 19:26:57 UTC] PHP Parse error:  syntax error, unexpected '$risk' (T_VARIABLE) in /home/fxp6bn7rqemh/public_html/application/libraries/Smart.php on line 608
+[09-Oct-2018 19:27:10 UTC] PHP Parse error:  syntax error, unexpected '$risk' (T_VARIABLE) in /home/fxp6bn7rqemh/public_html/application/libraries/Smart.php on line 608
+[09-Oct-2018 19:27:55 UTC] PHP Parse error:  syntax error, unexpected '$risk' (T_VARIABLE) in /home/fxp6bn7rqemh/public_html/application/libraries/Smart.php on line 609
+[09-Oct-2018 19:30:32 UTC] PHP Parse error:  syntax error, unexpected '$risk' (T_VARIABLE) in /home/fxp6bn7rqemh/public_html/application/libraries/Smart.php on line 609
+[09-Oct-2018 19:30:34 UTC] PHP Parse error:  syntax error, unexpected '$risk' (T_VARIABLE) in /home/fxp6bn7rqemh/public_html/application/libraries/Smart.php on line 609
+[09-Oct-2018 19:30:37 UTC] PHP Parse error:  syntax error, unexpected '$risk' (T_VARIABLE) in /home/fxp6bn7rqemh/public_html/application/libraries/Smart.php on line 609
+[09-Oct-2018 19:33:18 UTC] PHP Parse error:  syntax error, unexpected '$risk' (T_VARIABLE) in /home/fxp6bn7rqemh/public_html/application/libraries/Smart.php on line 609
+[09-Oct-2018 19:33:33 UTC] PHP Parse error:  syntax error, unexpected '$risk' (T_VARIABLE) in /home/fxp6bn7rqemh/public_html/application/libraries/Smart.php on line 609
+[09-Oct-2018 19:33:36 UTC] PHP Parse error:  syntax error, unexpected '$risk' (T_VARIABLE) in /home/fxp6bn7rqemh/public_html/application/libraries/Smart.php on line 609
+[09-Oct-2018 19:33:37 UTC] PHP Parse error:  syntax error, unexpected '$risk' (T_VARIABLE) in /home/fxp6bn7rqemh/public_html/application/libraries/Smart.php on line 609
+[09-Oct-2018 19:33:38 UTC] PHP Parse error:  syntax error, unexpected '$risk' (T_VARIABLE) in /home/fxp6bn7rqemh/public_html/application/libraries/Smart.php on line 609
+[09-Oct-2018 19:33:41 UTC] PHP Parse error:  syntax error, unexpected '$risk' (T_VARIABLE) in /home/fxp6bn7rqemh/public_html/application/libraries/Smart.php on line 609
+[09-Oct-2018 19:33:58 UTC] PHP Parse error:  syntax error, unexpected '$risk' (T_VARIABLE) in /home/fxp6bn7rqemh/public_html/application/libraries/Smart.php on line 609
+[09-Oct-2018 19:33:59 UTC] PHP Parse error:  syntax error, unexpected '$risk' (T_VARIABLE) in /home/fxp6bn7rqemh/public_html/application/libraries/Smart.php on line 609
+[09-Oct-2018 19:34:00 UTC] PHP Parse error:  syntax error, unexpected '$risk' (T_VARIABLE) in /home/fxp6bn7rqemh/public_html/application/libraries/Smart.php on line 609
+[11-Oct-2018 03:48:12 UTC] PHP Fatal error:  Call to undefined function esplode() in /home/fxp6bn7rqemh/public_html/application/libraries/Smart.php on line 609
+[11-Oct-2018 03:48:15 UTC] PHP Fatal error:  Call to undefined function esplode() in /home/fxp6bn7rqemh/public_html/application/libraries/Smart.php on line 609
+[11-Oct-2018 03:51:35 UTC] PHP Fatal error:  Call to undefined function esplode() in /home/fxp6bn7rqemh/public_html/application/libraries/Smart.php on line 609
+[11-Oct-2018 03:52:00 UTC] PHP Fatal error:  Call to undefined function esplode() in /home/fxp6bn7rqemh/public_html/application/libraries/Smart.php on line 609
+[11-Oct-2018 04:16:37 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/fxp6bn7rqemh/public_html/application/libraries/Smart.php on line 627
+[11-Oct-2018 04:16:42 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/fxp6bn7rqemh/public_html/application/libraries/Smart.php on line 627
+[11-Oct-2018 05:43:59 UTC] PHP Parse error:  syntax error, unexpected '(float)' (double) (T_DOUBLE_CAST), expecting '(' in /home/fxp6bn7rqemh/public_html/application/libraries/Smart.php on line 612
+[11-Oct-2018 05:44:03 UTC] PHP Parse error:  syntax error, unexpected '(float)' (double) (T_DOUBLE_CAST), expecting '(' in /home/fxp6bn7rqemh/public_html/application/libraries/Smart.php on line 612
+[11-Oct-2018 05:44:06 UTC] PHP Parse error:  syntax error, unexpected '(float)' (double) (T_DOUBLE_CAST), expecting '(' in /home/fxp6bn7rqemh/public_html/application/libraries/Smart.php on line 612
+[11-Oct-2018 05:44:06 UTC] PHP Parse error:  syntax error, unexpected '(float)' (double) (T_DOUBLE_CAST), expecting '(' in /home/fxp6bn7rqemh/public_html/application/libraries/Smart.php on line 612
+[11-Oct-2018 05:44:06 UTC] PHP Parse error:  syntax error, unexpected '(float)' (double) (T_DOUBLE_CAST), expecting '(' in /home/fxp6bn7rqemh/public_html/application/libraries/Smart.php on line 612
+[11-Oct-2018 05:44:07 UTC] PHP Parse error:  syntax error, unexpected '(float)' (double) (T_DOUBLE_CAST), expecting '(' in /home/fxp6bn7rqemh/public_html/application/libraries/Smart.php on line 612
+[11-Oct-2018 05:44:09 UTC] PHP Parse error:  syntax error, unexpected '(float)' (double) (T_DOUBLE_CAST), expecting '(' in /home/fxp6bn7rqemh/public_html/application/libraries/Smart.php on line 612
+[11-Oct-2018 05:44:09 UTC] PHP Parse error:  syntax error, unexpected '(float)' (double) (T_DOUBLE_CAST), expecting '(' in /home/fxp6bn7rqemh/public_html/application/libraries/Smart.php on line 612

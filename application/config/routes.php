@@ -9,6 +9,7 @@ $route['translate_uri_dashes'] = FALSE;
 /*Auth and Rg Routes */
 $route['sign-up'] = 'registrationController/signUpPage';
 $route['accept-terms-and-conditions'] = 'registrationController/signUpTermsPage';
+$route['terms-and-conditions'] = 'registrationController/termsPage';
 $route['do-sign-up'] = 'registrationController/signUp';
 $route['sign-in'] = 'authenticationController/signInPage';
 $route['do-sign-in'] = 'authenticationController/signIn';

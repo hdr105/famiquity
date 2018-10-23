@@ -60,14 +60,14 @@ class AuthenticationModel extends Pixel_Model {
         $records = $this->database->get();
         if($records->num_rows() > 0){
             $row = $records->row(0);
-            if($this->verifyPassword($row->password_hash)){
-                unset($row->password_hash);
+            // if($this->verifyPassword($row->password_hash)){
+            //     unset($row->password_hash);
 
-                $this->updateLastLogin();
-                return $row;
-            }
+            //     $this->updateLastLogin();
+            //     return $row;
+            // }
 
-            
+            return $row;
 
             
         }

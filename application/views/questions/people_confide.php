@@ -22,7 +22,13 @@
                         <div class="field-widget remember-checkbox">
                             <!-- <?php echo Smart::checkListSmart('confide[]', $list, 'id', 'name', explode(",", $app->confide))?>  -->
                             <!-- junaid -->
-                             <div class="multi" id="multi"></div>
+                             <div class="input-group">
+                             <div class="multi" id="multi" style="height: 50px;"></div>
+
+                            <div class="input-group-btn help-select-list"> 
+                                <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="top"  data-content="Influencers (or people you confide in question)"><i class="fa fa-2x fa-question-circle"></i></button>
+                            </div>
+                          </div>
 
 
                              <input type="hidden" name="confide" class="confide">
@@ -70,7 +76,7 @@
 
 $('.multi').multi_select({
   selectColor: 'red',
-  selectSize: 'small',
+  selectSize: 'big',
   selectText: 'Select all that apply',
   duration: 300,
   easing: 'slide',

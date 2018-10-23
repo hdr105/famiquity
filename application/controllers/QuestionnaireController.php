@@ -155,12 +155,14 @@ class QuestionnaireController extends Pixel_Controller {
             $application = $this->model->getApplicationById($this->session->appId);
             $data['list'] = $this->model->selectTypes('relationship_status');
             $data['app'] = $application;
+
             $key = 'relationship-status';
             $objFlow = Smart::getNextPreviousStep($application, $key);
             $data['next_page'] = "";//$objFlow->next;
             $data['prev_page'] = $objFlow->prev;
             $data['percentage'] = $objFlow->percentage;
-
+            //        echo "<pre>";
+            // print_r($data); exit();
 
             $this->load->view('shared/_header');
             $this->load->view('questions/relation_ship_status', $data);
@@ -184,10 +186,25 @@ class QuestionnaireController extends Pixel_Controller {
             $object = new stdClass();
             $object->relationship_status = $this->input->post('relationship_status', TRUE);
 
-            $application = $this->model->getApplicationById($this->session->appId);
+          
+
+            // $key = "relationship-status";
+            // $objFlow = Smart::getNextPreviousStep($application, $key);
+
+            // // echo $object->relationship_status;
+            // // print_r($objFlow); exit();
+            // $object->current_seo_uri = $objFlow->next;
+            // $this->updateApplication($object, $objFlow->next);
+            
             $key = "relationship-status";
+            $application = $this->model->getApplicationById($this->session->appId);
             $objFlow = Smart::getNextPreviousStep($application, $key);
             $object->current_seo_uri = $objFlow->next;
+            // echo "<pre>";
+            // echo $this->session->appId;
+            // echo  $application->relationship_status;
+            // echo $object->relationship_status;
+            // print_r( $application); exit();
             $this->updateApplication($object, $objFlow->next);
         }
     }
@@ -209,12 +226,17 @@ class QuestionnaireController extends Pixel_Controller {
             $data['list'] = $this->model->selectTypes('relationship_status');
             $data['app'] = $application;
             $data['risk'] = $risk;
+
+
             $key = 'income-info';
             $objFlow = Smart::getNextPreviousStep($application, $key);
-            $data['next_page'] = "";//$objFlow->next;
+            $data['next_page'] = $objFlow->next;//$objFlow->next;
             $data['prev_page'] = $objFlow->prev;
             $data['percentage'] = $objFlow->percentage;
 
+            // echo "<pre>";
+            // print_r( $application);
+            // print_r( $objFlow); exit();
             $this->load->view('shared/_header');
             $this->load->view('questions/income', $data);
             $this->load->view('shared/_footer');
@@ -244,6 +266,9 @@ class QuestionnaireController extends Pixel_Controller {
             $objFlow = Smart::getNextPreviousStep($application, $key);
             //$next = Smart::getFirstPart($application);
             $object->current_seo_uri = $objFlow->next;
+            // echo  $object->job_title;
+            // echo $objFlow->next;
+            // print_r($objFlow); exit();
             $this->updateApplication($object, $objFlow->next);
         }
     }

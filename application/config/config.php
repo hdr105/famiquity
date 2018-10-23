@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-//$config['base_url'] = 'https://www.famiquity.com/';
+// $config['base_url'] = 'http://www.famiquity.blogbaaz.com/';
 $config['base_url'] = 'http://localhost/famiquity/';
 $config['index_page'] = '';
 $config['uri_protocol']	= 'REQUEST_URI';

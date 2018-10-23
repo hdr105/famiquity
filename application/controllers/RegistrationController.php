@@ -45,6 +45,7 @@ class RegistrationController extends Pixel_Controller {
             'error' => $this->session->flashdata('error'),
         );
         $data['provinces'] = $this->model->selectTypes('state');
+
         $this->load->view('shared/_header');
         //$this->load->view('register/temp', $data);//
         $this->load->view('register/signup', $data);
@@ -92,6 +93,20 @@ class RegistrationController extends Pixel_Controller {
             
             //$this->stepOneRoutine($customerObject);
         }
+        
+    }
+
+    public function termsPage() {
+      
+   
+            Smart::setTitle('Accept Terms and Conditions');
+            Smart::setDescription('Register');
+            $this->load->view('shared/_header');
+            //$this->load->view('register/temp', $data);//
+            $this->load->view('register/terms');
+            $this->load->view('shared/_footer');
+            
+           
         
     }
 

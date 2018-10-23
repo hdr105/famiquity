@@ -54,11 +54,10 @@ class PayerReciepientController extends Pixel_Controller {
     public function pensionInfo() {
 
         $this->load->library('form_validation');
-        $error = array('required' => $this->lang->line('req_decission'));
-        $errorS = array('required' => $this->lang->line('req_decission'));
+        $alert = array('required' => $this->lang->line('pension_add'));
 
-        $this->form_validation->set_rules('rrsp_value', '', 'trim|required', $error);
-        $this->form_validation->set_rules('s_rrsp_value', '', 'trim|required', $errorS);
+        $this->form_validation->set_rules('rrsp_value', 'Your Pension', 'trim|required');
+        $this->form_validation->set_rules('s_rrsp_value', 'Partner Pension', 'trim|required');
         if ($this->form_validation->run() == FALSE) {
             $this->pensionInfoPage();
         } else {
@@ -1085,11 +1084,14 @@ class PayerReciepientController extends Pixel_Controller {
             $application = $this->model->getApplicationById($this->session->appId);
             $data['list'] = $this->model->selectTypes('jobtitle', TRUE);
             $data['app'] = $application;
+
             $key = 'job-info';
             $objFlow = Smart::getNextPreviousStep($application, $key);
             $data['next_page'] = "";//$objFlow->next;
             $data['prev_page'] = $objFlow->prev;
             $data['percentage'] = $objFlow->percentage;
+            //  echo "<pre>";
+            // print_r($data); exit();
             
             $this->load->view('shared/_header');
             $this->load->view('questions/your_job', $data);
@@ -1118,6 +1120,8 @@ class PayerReciepientController extends Pixel_Controller {
             $application = $this->model->getApplicationById($this->session->appId);
             $objFlow = Smart::getNextPreviousStep($application, $key);
             $object->current_seo_uri = $objFlow->next;
+            // echo  $object->job_title;
+            // print_r($objFlow); exit();
             $this->updateApplication($object, $objFlow->next);
         }
     }
@@ -2163,6 +2167,8 @@ class PayerReciepientController extends Pixel_Controller {
             $data['prev_page'] = $objFlow->prev;
             $data['percentage'] = $objFlow->percentage;
              $data['show_assessment'] = false;
+
+             // print_r($application); exit();
 
             $this->load->view('shared/_header');
             $this->load->view('questions/people_confide', $data);

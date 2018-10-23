@@ -556,7 +556,7 @@ public static function getSelectCaption($id) {
     }
     public static function getNextPreviousStep($app, $key, $skip_value=NULL) {
     
-        $app->relationship_status = ((int)$app->relationship_status < 63)?63:$app->relationship_status;//Fix for initial questions
+         $app->relationship_status = ((int)$app->relationship_status < 58)?63:$app->relationship_status;//Fix for initial questions
         $out['prev'] = NULL;
         $out['next'] = NULL;
         $out['skip_to'] = NULL;
@@ -571,13 +571,15 @@ public static function getSelectCaption($id) {
             
             $out['prev'] = ($previous !== NULL)? $previous : 'income-info';
             $nextURI = ($next !== NULL)? $next : NULL;
-            //echo (int)self::$FLOWS[$app->relationship_status][$next]->skip_value;
-            //print_r(self::$FLOWS[$app->relationship_status][$next]);
-            //exit;
+            // echo (int)self::$FLOWS[$app->relationship_status][$next]->skip_value;
+            // print_r(self::$FLOWS[$app->relationship_status][$next]);
+            // exit;
             if($nextURI !== NULL){
                 $nextURI = ((int)$skip_value === (int)self::$FLOWS[$app->relationship_status][$next]->skip_value)?
                         self::$FLOWS[$app->relationship_status][$next]->skip_steps : $nextURI;
             }
+            // echo $nextURI;
+            // exit();
             $out['next'] = $nextURI;
             $out['percentage'] = (int)(((int)self::$currentIndex / (int)self::$maxIndex)*100);
             

@@ -1,8 +1,16 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-// $config['base_url'] = 'http://www.famiquity.blogbaaz.com/';
-$config['base_url'] = 'http://localhost/famiquity/';
+//$config['base_url'] = 'http://famiquity.blogbaaz.com/';
+//$config['base_url'] = 'http://' . $_SERVER['HTTP_HOST'] . "/famiquity.blogbaaz.com/";
+//$config['base_url'] = 'http://localhost/famiquity/';
+$protocol = stripos($_SERVER['SERVER_PROTOCOL'],'https') === true ? 'https://' : 'http://';
+
+if ($_SERVER['HTTP_HOST'] == 'localhost') {
+	$config['base_url'] =	$protocol.$_SERVER['HTTP_HOST'].'/famiquity/';
+}else{
+	$config['base_url'] =	 $protocol.$_SERVER['HTTP_HOST'].'/';
+}
 $config['index_page'] = '';
 $config['uri_protocol']	= 'REQUEST_URI';
 $config['url_suffix'] = '';
@@ -53,5 +61,5 @@ $config['compress_output'] = FALSE;
 $config['time_reference'] = 'local';
 $config['rewrite_short_tags'] = FALSE;
 $config['proxy_ips'] = '';
-$config['notification_sender_address'] = 'noreply@famiquity.com';
+$config['notification_sender_address'] = 'haadi.javaid@gmail.com';
 $config['notification_sender'] = 'Famiquity';

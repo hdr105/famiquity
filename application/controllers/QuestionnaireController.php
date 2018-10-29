@@ -23,37 +23,53 @@ class QuestionnaireController extends Pixel_Controller {
 
 
     public function createSessionApplication() {
-        // $isLogedIn = $this->isAuthorized();
-        // if ($isLogedIn === TRUE) {//if Loggedin Start Appl
-            $this->createApplication();
-       //  } else {
-       //      $haveTempApp = (int) $this->model->numSessionApps($this->session->session_id);
-       //      if ($haveTempApp <= 0) {
-       //          $object = new stdClass();
-       //          $object->user_id = 0;
-       //          $object->decision_id = $this->input->post('decision_id', TRUE);
-       //          //$object->profession_id = $this->input->post('profession_id', TRUE);
-       //          $object->start_date = $this->currentDate;
-       //          $object->session_id = $this->session->session_id;
-       //          $object->current_seo_uri = 'confide';
-       //          $appDate = array('tempApp' => TRUE, "tempId" => $this->session->session_id);
-       //          $this->session->set_userdata($appDate);
-       //          $applicationId = $this->model->createApplication($object);
-       //          $this->session->set_userdata(array('appId' => $applicationId));
-       //          $this->session->set_userdata(array('numKids' => 0));
+         $isLogedIn = $this->isAuthorized();
+        if ($isLogedIn === TRUE) {//if Loggedin Start Appl
+             $this->createApplication();
+          //echo "if <br>";
+        } else {
+          //echo "else <br>";
+          
+            // $haveTempApp = (int) $this->model->numSessionApps($this->session->session_id);
+            //  if ($haveTempApp <= 0) {
+                $object = new stdClass();
+                $object->user_id = 0;
+                $object->decision_id = $this->input->post('decision_id', TRUE);
+                $decision_row = $this->model->get_decision($object->decision_id);
+                 $decision =  $decision_row->name;
+                $this->session->set_userdata('life_decision',$decision);
+                $object->start_date = $this->currentDate;
+                $object->session_id = $this->session->session_id;
+                $object->current_seo_uri = 'confide';
+                $appDate = array('tempApp' => TRUE, "tempId" => $this->session->session_id);
+                $this->session->set_userdata($appDate);
+                $applicationId = $this->model->createApplication($object);
+                $this->session->set_userdata(array('appId' => $applicationId));
+                $this->session->set_userdata(array('numKids' => 0));
                 
-       //          $application = $this->model->getApplicationById($this->session->appId);
-       //          $key = "life-decision";
-       //          $objFlow = Smart::getNextPreviousStep($application, $key);
-       //      } else {
-       //          $application = $this->model->getApplicationBySession($this->session->session_id);
-       //          $this->session->set_userdata(array('appId' => $application->id));
-       //          $key = $application->current_seo_uri;
-       //          $objFlow = Smart::getNextPreviousStep($application, $key);
-       //          $objFlow->next = $key;
-       //      }
-       //      redirect(base_url($objFlow->next));
-       // } 
+                $application = $this->model->getApplicationById($this->session->appId);
+                $key = "life-decision";
+                $objFlow = Smart::getNextPreviousStep($application, $key);
+                redirect(base_url($objFlow->next));
+            // } else {
+                
+            //     $object->decision_id = $this->input->post('decision_id', TRUE);
+            //     $decision_row = $this->model->get_decision($object->decision_id);
+            //     $decision =  $decision_row->name;
+            //     $this->session->set_userdata('life_decision',$decision);
+            //     $application = $this->model->getApplicationBySession($this->session->session_id);
+            //     $this->session->set_userdata(array('appId' => $application->id));
+            //     $key = $application->current_seo_uri;
+            //     $objFlow = Smart::getNextPreviousStep($application, $key);
+            //     $objFlow->next = "confide";
+            //     redirect(base_url($objFlow->next));
+            // }
+           redirect(base_url($objFlow->next));
+            exit();
+           
+       } 
+
+
     }
 
     public function createApplication() {
@@ -230,7 +246,7 @@ class QuestionnaireController extends Pixel_Controller {
 
             $key = 'income-info';
             $objFlow = Smart::getNextPreviousStep($application, $key);
-            $data['next_page'] = $objFlow->next;//$objFlow->next;
+            $data['next_page'] = "";//$objFlow->next;
             $data['prev_page'] = $objFlow->prev;
             $data['percentage'] = $objFlow->percentage;
 

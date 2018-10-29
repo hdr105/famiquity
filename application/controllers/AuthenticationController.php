@@ -39,12 +39,12 @@ class AuthenticationController extends Pixel_Controller{
     
     public function signIn() {
         
-        // $captchaVerified = $this->verifyCaptcha();
-        // if($captchaVerified === FALSE){
-        //     Smart::setSoftError("Please prove you are a human");
-        //     redirect('sign-in');
-        //     exit;
-        // }
+        $captchaVerified = $this->verifyCaptcha();
+        if($captchaVerified === FALSE){
+            Smart::setSoftError("Please prove you are a human");
+            redirect('sign-in');
+            exit;
+        }
         
         $this->config->set_item('language', $this->language);
         $this->load->helper('form');
@@ -140,12 +140,12 @@ class AuthenticationController extends Pixel_Controller{
         if ($this->isAuthorized()) {
             redirect(base_url());
         }
-        /*$captchaVerified = $this->verifyCaptcha();
+        $captchaVerified = $this->verifyCaptcha();
         if($captchaVerified === FALSE){
             Smart::setSoftError("Please prove you are a human");
             redirect('forgot-password');
             exit;
-        }*/
+        }
         $this->config->set_item('language', $this->language);
         $this->load->library('form_validation');
 

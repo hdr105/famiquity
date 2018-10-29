@@ -14,36 +14,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  */
 class RegistrationController extends Pixel_Controller {
 
-
-
-
-    public function test_email(){
-
-          $mail = $this->phpmailerlib->load();
-
-            $mail->SMTPDebug = 2; 
-    
-            $mail->setFrom('haadi.javaid@gmail.com', 'Haider');
-            $mail->addAddress('haadi.javaid@gmail.com', '');     // Add a recipient
-            $mail->isHTML(true);                                  // Set email format to HTML
-            $mail->Subject = 'TEST';
-            $mail->Body    = '<b>TEST</b>';
-
-            $abc = $mail->send();
-
-            if ($abc) {
-
-                echo ('Seems like your SMTP settings is set correctly. Check your email now.');
-
-            }else{
-               echo ('<h1>Your SMTP settings are not set correctly here is the debug log.</h1><br />' . $mail->ErrorInfo);
-
-
-           }
-
-       
-    }
-
     
     public function registrationCompletePage() {
         if ($this->isAuthorized()) {
@@ -144,7 +114,7 @@ class RegistrationController extends Pixel_Controller {
         if ($this->isAuthorized()) {
             redirect(base_url('sign-in'));
         }
-        $captchaVerified = $this->verifyCaptcha();
+        /*$captchaVerified = $this->verifyCaptcha();
         if ($captchaVerified === FALSE) {
             Smart::setSoftError("Please prove you are a human");
             redirect('sign-up');
@@ -157,10 +127,10 @@ class RegistrationController extends Pixel_Controller {
             } else {
                 $this->signUpPage();
             }
-        } else {
+        } else {*/
             $customerObject = unserialize(base64_decode($this->input->post('obj', TRUE)));
             $this->stepOneRoutine($customerObject);
-        }
+        //}
     }
 
     public function signUpLawyer() {
@@ -349,8 +319,7 @@ class RegistrationController extends Pixel_Controller {
         );
         $data['provinces'] = $this->model->selectTypes('state');
         $this->load->view('shared/_header');
-         $this->load->view('register/temp', $data);
-       // $this->load->view('register/signup_fa', $data);
+        $this->load->view('register/temp', $data);//$this->load->view('register/signup_fa', $data);
         $this->load->view('shared/_footer');
     }
 
@@ -385,6 +354,7 @@ class RegistrationController extends Pixel_Controller {
                     "link" => $link,
                     "activation" => $active_link,
                     "customer" => $customer);
+
                 $this->emailshelper->shootEmail($params, $this->registration);
                 $userDate = array('CustomerObject' => $customer,
                   'AppLogin' => TRUE,

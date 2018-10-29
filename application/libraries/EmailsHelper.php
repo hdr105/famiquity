@@ -60,6 +60,8 @@ class EmailsHelper {
             if(!$this->_test)
             {
                 $this->CI->email->send();
+
+                $error = $this->email->print_debugger(array('headers'));
             }
             
         }

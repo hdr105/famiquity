@@ -348,7 +348,7 @@ class PayerReciepientController extends Pixel_Controller {
             $key = 'past-cohabitaion-info';
             $objFlow = Smart::getNextPreviousStep($application, $key);
             $data['next_page'] = "";//$objFlow->next;
-            $data['show_assessment'] = TRUE;
+            $data['show_assessment'] = FALSE;
             $data['prev_page'] = $objFlow->prev;
             $data['percentage'] = $objFlow->percentage;
             $this->load->view('shared/_header');

@@ -1,3 +1,5 @@
+
+
 <?php $this->load->view('shared/_page_banner_empty');  ?>
 <section class="gray-bg page-section-ptb o-hidden">
     <?php $this->load->view('shared/_page_header', array("txt1" => "", "txt2" => "People you Confide with", "txt3" => "")); ?>
@@ -26,7 +28,7 @@
                              <div class="multi" id="multi" style="height: 50px;"></div>
 
                             <div class="input-group-btn help-select-list"> 
-                                <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="top"  data-content="Influencers (or people you confide in question)"><i class="fa fa-2x fa-question-circle"></i></button>
+                                <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="top"  data-content="After making selections, move the cursor off the box, and click on the screen to reduce the box"><i class="fa fa-2x fa-question-circle"></i></button>
                             </div>
                           </div>
 

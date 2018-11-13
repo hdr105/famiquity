@@ -6,12 +6,19 @@ $query_builder = TRUE;
 
 $db['yacopo'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
+	// 'hostname' => 'localhost',
 	// 'username' => 'famiquity_usr',
 	// 'password' => 'SB);}geRv[Fy',
+	// 'hostname' => 'shareddb1e.hosting.stackcp.net',
+	// 'username' => 'famiquity-363715db',
+	// 'password' => 'famiquity123',
+	// 'database' => 'famiquity-363715db',
+
+	'hostname' => 'localhost',
 	'username' => 'root',
 	'password' => '',
 	'database' => 'famiquity',
+
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,

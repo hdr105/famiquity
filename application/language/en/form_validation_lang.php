@@ -21,6 +21,7 @@ $lang['incorrect_password'] = 'Current password is not correct';
 $lang['invalid_login'] = 'Invalid email and/or Password';
 $lang['email_exisit'] = 'This email address is already associated with an account. ';
 $lang['must_be_logged_in'] = 'You must be logged in to view this page.';
+$lang['pension_add'] = 'Please Select number';
 $lang['req_fname'] = 'First name must be between 2 to 32 characters and only alphabets - . and space are allowed.';
 $lang['req_lname'] = 'Last name must be between 2 to 32 characters and only alphabets - . and space are allowed.';
 $lang['req_fullname'] = 'Your name must be between 2 to 70 characters and only alphabets - . and space are allowed.';

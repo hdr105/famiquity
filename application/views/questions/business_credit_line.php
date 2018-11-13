@@ -13,9 +13,13 @@
                     echo Smart::formErrors();
                 ?>
                 <div id="register-form" class="register-form">
+                    <div>
+                    <h5>Life Decision : <?php echo $this->session->userdata('life_decision'); ?></h5>
+                    <hr>
+                  </div>
                     <div class="section-field">
                         <label><?php echo $this->labelArray['business_credit_line'];?></label>
-                        <div class="input-group">
+                        <div class ='field-widget'>
                             <input type="number" min="0" step="10000" class="form-control" required="required" autocomplete="off" name="business_credit_line"  value="<?php echo Smart::setValue('business_credit_line', $app->business_credit_line); ?>"
                                    data-message="<?php echo lang('req_gift_value') ?>" style="height: 48px;">
                                    <div class="input-group-btn help-select-list"> 
@@ -25,7 +29,7 @@
                     </div>
                     <div class="section-field">
                         <label><?php echo $this->labelArray['business_credit_line_spouse'];?></label>
-                        <div class="input-group">
+                        <div class ='field-widget'>
                             <input type="number" min="0" step="10000" class="form-control" required="required" autocomplete="off" name="business_credit_line_spouse"  value="<?php echo Smart::setValue('business_credit_line_spouse', $app->business_credit_line_spouse); ?>"
                                    data-message="<?php echo lang('req_gift_value') ?>" style="height: 48px;">
                                    <div class="input-group-btn help-select-list"> 

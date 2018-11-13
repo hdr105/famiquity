@@ -16,14 +16,13 @@
                     <div class="progress-bar " role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">You are here</div>
                 </div>
                 <p>
-                    Above is the total dollar value you are at risk, as well as the risk level. 
+                   Above is the total dollar value you may be at risk, as well as the risk level.
                 </p>
                 <p>
-                    The total dollar value is calculated by inputing the answers you provided, into family and property calculators available in your jurisdiction. 
-                    The risk level is calculated by applying your answers, to Famiquity's relationship breakdown algorithms, based on years of research.
+                    The total dollar value is calculated by inputting the answers you provided, into family and property calculators available in your jurisdiction. The risk level is calculated by combining your answers, with Famiquity's relationship breakdown algorithms.
                 </p>
                 <p>
-                    If you are interested in exploring ways to reduce these risks, please continue to complete the questionnaire, as we need more detailed information to help you. Famiquity does not provide legal advice. What we can do is provide you detailed reports, so financial, legal, and other professionals can provide you advice to reduce your risk. The reports will narrow down the issues, and therefore reduce costs with the appropriate professional.
+                    If you are interested in exploring ways to reduce these risks, please continue to complete the questionnaire, as we need more detailed information in order to produce a report. Famiquity does not provide legal or financial advice. What we can do is provide detailed reports, which may assist financial, legal, and other professionals to provide you advice. A benefit of the reports is they may narrow down the issues, and therefore reduce costs with the appropriate professional.
                 </p>
                 <?php
                 echo Smart::softErrors();

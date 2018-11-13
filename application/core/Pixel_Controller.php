@@ -16,6 +16,8 @@ class Pixel_Controller extends CI_Controller {
 
     public function __construct() {
         parent::__construct();
+        $this->load->helper('directory');
+
         $this->language = strtolower($this->uri->segment(1, 'en'));
         $this->language = ($this->language !== 'fr') ? "en" : "fr";
 
@@ -26,6 +28,7 @@ class Pixel_Controller extends CI_Controller {
         setlocale(LC_ALL, $local);
         $now = new DateTime();
         $this->currentDate = $now->format('Y-m-d H:i:s');
+        $this->load->helper("custom");
     }
 
     public function getLanguage() {

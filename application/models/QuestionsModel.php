@@ -168,4 +168,17 @@ class QuestionsModel extends Pixel_Model{
         }
         return NULL;
     }
+
+    public function get_decision($id) {
+        $this->database->select('*')
+                ->from('select_types')
+                ->where('type','decisions')
+                ->where('id',$id)
+                ->where('status', 1);
+        $query = $this->database->get();
+        if ((int) $query->num_rows() > 0) {
+            return $query->row();
+        }
+        return NULL;
+    }
 }

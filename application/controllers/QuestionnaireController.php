@@ -23,37 +23,53 @@ class QuestionnaireController extends Pixel_Controller {
 
 
     public function createSessionApplication() {
-        // $isLogedIn = $this->isAuthorized();
-        // if ($isLogedIn === TRUE) {//if Loggedin Start Appl
-            $this->createApplication();
-       //  } else {
-       //      $haveTempApp = (int) $this->model->numSessionApps($this->session->session_id);
-       //      if ($haveTempApp <= 0) {
-       //          $object = new stdClass();
-       //          $object->user_id = 0;
-       //          $object->decision_id = $this->input->post('decision_id', TRUE);
-       //          //$object->profession_id = $this->input->post('profession_id', TRUE);
-       //          $object->start_date = $this->currentDate;
-       //          $object->session_id = $this->session->session_id;
-       //          $object->current_seo_uri = 'confide';
-       //          $appDate = array('tempApp' => TRUE, "tempId" => $this->session->session_id);
-       //          $this->session->set_userdata($appDate);
-       //          $applicationId = $this->model->createApplication($object);
-       //          $this->session->set_userdata(array('appId' => $applicationId));
-       //          $this->session->set_userdata(array('numKids' => 0));
+         $isLogedIn = $this->isAuthorized();
+        if ($isLogedIn === TRUE) {//if Loggedin Start Appl
+             $this->createApplication();
+          //echo "if <br>";
+        } else {
+          //echo "else <br>";
+          
+            // $haveTempApp = (int) $this->model->numSessionApps($this->session->session_id);
+            //  if ($haveTempApp <= 0) {
+                $object = new stdClass();
+                $object->user_id = 0;
+                $object->decision_id = $this->input->post('decision_id', TRUE);
+                $decision_row = $this->model->get_decision($object->decision_id);
+                 $decision =  $decision_row->name;
+                $this->session->set_userdata('life_decision',$decision);
+                $object->start_date = $this->currentDate;
+                $object->session_id = $this->session->session_id;
+                $object->current_seo_uri = 'confide';
+                $appDate = array('tempApp' => TRUE, "tempId" => $this->session->session_id);
+                $this->session->set_userdata($appDate);
+                $applicationId = $this->model->createApplication($object);
+                $this->session->set_userdata(array('appId' => $applicationId));
+                $this->session->set_userdata(array('numKids' => 0));
                 
-       //          $application = $this->model->getApplicationById($this->session->appId);
-       //          $key = "life-decision";
-       //          $objFlow = Smart::getNextPreviousStep($application, $key);
-       //      } else {
-       //          $application = $this->model->getApplicationBySession($this->session->session_id);
-       //          $this->session->set_userdata(array('appId' => $application->id));
-       //          $key = $application->current_seo_uri;
-       //          $objFlow = Smart::getNextPreviousStep($application, $key);
-       //          $objFlow->next = $key;
-       //      }
-       //      redirect(base_url($objFlow->next));
-       // } 
+                $application = $this->model->getApplicationById($this->session->appId);
+                $key = "life-decision";
+                $objFlow = Smart::getNextPreviousStep($application, $key);
+                redirect(base_url($objFlow->next));
+            // } else {
+                
+            //     $object->decision_id = $this->input->post('decision_id', TRUE);
+            //     $decision_row = $this->model->get_decision($object->decision_id);
+            //     $decision =  $decision_row->name;
+            //     $this->session->set_userdata('life_decision',$decision);
+            //     $application = $this->model->getApplicationBySession($this->session->session_id);
+            //     $this->session->set_userdata(array('appId' => $application->id));
+            //     $key = $application->current_seo_uri;
+            //     $objFlow = Smart::getNextPreviousStep($application, $key);
+            //     $objFlow->next = "confide";
+            //     redirect(base_url($objFlow->next));
+            // }
+           redirect(base_url($objFlow->next));
+            exit();
+           
+       } 
+
+
     }
 
     public function createApplication() {
@@ -75,6 +91,14 @@ class QuestionnaireController extends Pixel_Controller {
             $object = new stdClass();
             $object->user_id = (int) $this->currentCustomer->id;
             $object->decision_id = $this->input->post('decision_id', TRUE);
+            // /$id =$this->input->post('decision_id', TRUE);
+
+            $decision_row = $this->model->get_decision($object->decision_id);
+            $decision =  $decision_row->name;
+            $this->session->set_userdata('life_decision',$decision);
+            
+         
+
             //$object->profession_id = $this->input->post('profession_id', TRUE);
             $object->start_date = $this->currentDate;
             $object->current_seo_uri = 'life-decision';
@@ -147,12 +171,14 @@ class QuestionnaireController extends Pixel_Controller {
             $application = $this->model->getApplicationById($this->session->appId);
             $data['list'] = $this->model->selectTypes('relationship_status');
             $data['app'] = $application;
+
             $key = 'relationship-status';
             $objFlow = Smart::getNextPreviousStep($application, $key);
             $data['next_page'] = "";//$objFlow->next;
             $data['prev_page'] = $objFlow->prev;
             $data['percentage'] = $objFlow->percentage;
-
+            //        echo "<pre>";
+            // print_r($data); exit();
 
             $this->load->view('shared/_header');
             $this->load->view('questions/relation_ship_status', $data);
@@ -176,10 +202,25 @@ class QuestionnaireController extends Pixel_Controller {
             $object = new stdClass();
             $object->relationship_status = $this->input->post('relationship_status', TRUE);
 
-            $application = $this->model->getApplicationById($this->session->appId);
+          
+
+            // $key = "relationship-status";
+            // $objFlow = Smart::getNextPreviousStep($application, $key);
+
+            // // echo $object->relationship_status;
+            // // print_r($objFlow); exit();
+            // $object->current_seo_uri = $objFlow->next;
+            // $this->updateApplication($object, $objFlow->next);
+            
             $key = "relationship-status";
+            $application = $this->model->getApplicationById($this->session->appId);
             $objFlow = Smart::getNextPreviousStep($application, $key);
             $object->current_seo_uri = $objFlow->next;
+            // echo "<pre>";
+            // echo $this->session->appId;
+            // echo  $application->relationship_status;
+            // echo $object->relationship_status;
+            // print_r( $application); exit();
             $this->updateApplication($object, $objFlow->next);
         }
     }
@@ -201,12 +242,17 @@ class QuestionnaireController extends Pixel_Controller {
             $data['list'] = $this->model->selectTypes('relationship_status');
             $data['app'] = $application;
             $data['risk'] = $risk;
+
+
             $key = 'income-info';
             $objFlow = Smart::getNextPreviousStep($application, $key);
             $data['next_page'] = "";//$objFlow->next;
             $data['prev_page'] = $objFlow->prev;
             $data['percentage'] = $objFlow->percentage;
 
+            // echo "<pre>";
+            // print_r( $application);
+            // print_r( $objFlow); exit();
             $this->load->view('shared/_header');
             $this->load->view('questions/income', $data);
             $this->load->view('shared/_footer');
@@ -236,6 +282,9 @@ class QuestionnaireController extends Pixel_Controller {
             $objFlow = Smart::getNextPreviousStep($application, $key);
             //$next = Smart::getFirstPart($application);
             $object->current_seo_uri = $objFlow->next;
+            // echo  $object->job_title;
+            // echo $objFlow->next;
+            // print_r($objFlow); exit();
             $this->updateApplication($object, $objFlow->next);
         }
     }

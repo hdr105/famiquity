@@ -14,11 +14,15 @@
                 echo Smart::formErrors();
                 ?>
                 <div id="register-form" class="register-form">
+                    <div>
+                    <h5>Life Decision : <?php echo $this->session->userdata('life_decision'); ?></h5>
+                    <hr>
+                  </div>
 
                     <div class="section-field">
                         <label><?php echo $this->labelArray['rrsp_value'];?></label>
                         <div class="field-widget">
-                            <input type="number" min="0" step="25000" class="form-control" required="required" autocomplete="off" name="rrsp_value"  value="<?php echo Smart::setValue('rrsp_value', $app->rrsp_value); ?>"
+                            <input type="number" min="0" step="25000" class="form-control"  autocomplete="off" name="rrsp_value"  value="<?php echo Smart::setValue('rrsp_value', $app->rrsp_value); ?>"
                             data-message="<?php echo lang('req_fname') ?>"  style="height: 48px;">
                             <div class="input-group-btn help-select-list"> 
                                 <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="top"  data-content="Use the scroll button to estimate the total value.
@@ -29,7 +33,7 @@
                     <div class="section-field">
                         <label><?php echo $this->labelArray['s_rrsp_value'];?></label>
                         <div class="field-widget">
-                            <input type="number" min="0" step="25000" class="form-control" required="required" autocomplete="off" name="s_rrsp_value"  value="<?php echo Smart::setValue('s_rrsp_value', $app->s_rrsp_value); ?>"
+                            <input type="number" min="0" step="25000" class="form-control"  autocomplete="off" name="s_rrsp_value"  value="<?php echo Smart::setValue('s_rrsp_value', $app->s_rrsp_value); ?>"
                             data-message="<?php echo lang('req_fname') ?>" style="height: 48px;">
                             <div class="input-group-btn help-select-list"> 
                                 <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="top"  data-content="Use the scroll button to estimate the total value.

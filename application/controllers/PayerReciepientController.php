@@ -54,11 +54,10 @@ class PayerReciepientController extends Pixel_Controller {
     public function pensionInfo() {
 
         $this->load->library('form_validation');
-        $error = array('required' => $this->lang->line('req_decission'));
-        $errorS = array('required' => $this->lang->line('req_decission'));
+        $alert = array('required' => $this->lang->line('pension_add'));
 
-        $this->form_validation->set_rules('rrsp_value', '', 'trim|required', $error);
-        $this->form_validation->set_rules('s_rrsp_value', '', 'trim|required', $errorS);
+        $this->form_validation->set_rules('rrsp_value', 'Your Pension', 'trim|required');
+        $this->form_validation->set_rules('s_rrsp_value', 'Partner Pension', 'trim|required');
         if ($this->form_validation->run() == FALSE) {
             $this->pensionInfoPage();
         } else {
@@ -296,7 +295,7 @@ class PayerReciepientController extends Pixel_Controller {
             $key = 'home-value-info';
             $objFlow = Smart::getNextPreviousStep($application, $key);
             $data['next_page'] = "";//$objFlow->next;
-            $data['show_assessment'] = TRUE;
+            $data['show_assessment'] = FALSE;
             $data['prev_page'] = $objFlow->prev;
             $data['percentage'] = $objFlow->percentage;
             
@@ -349,7 +348,7 @@ class PayerReciepientController extends Pixel_Controller {
             $key = 'past-cohabitaion-info';
             $objFlow = Smart::getNextPreviousStep($application, $key);
             $data['next_page'] = "";//$objFlow->next;
-            $data['show_assessment'] = TRUE;
+            $data['show_assessment'] = FALSE;
             $data['prev_page'] = $objFlow->prev;
             $data['percentage'] = $objFlow->percentage;
             $this->load->view('shared/_header');
@@ -572,8 +571,8 @@ class PayerReciepientController extends Pixel_Controller {
             $data['app'] = $application;
             $key = 'kids-other-partner-info';
             $objFlow = Smart::getNextPreviousStep($application, $key);
-            $data['next_page'] = $objFlow->next;
-            $data['show_assessment'] = TRUE;
+            $data['next_page'] = "";
+            $data['show_assessment'] = FALSE;
             $data['prev_page'] = $objFlow->prev;
             $data['percentage'] = $objFlow->percentage;
             
@@ -621,8 +620,8 @@ class PayerReciepientController extends Pixel_Controller {
             $data['app'] = $application;
             $key = 'kids-info';
             $objFlow = Smart::getNextPreviousStep($application, $key);
-            $data['next_page'] = $objFlow->next;
-            $data['show_assessment'] = TRUE;
+            $data['next_page'] = "";
+            $data['show_assessment'] = FALSE;
             $data['prev_page'] = $objFlow->prev;
             $data['percentage'] = $objFlow->percentage;
 
@@ -682,8 +681,8 @@ class PayerReciepientController extends Pixel_Controller {
             $data['app'] = $application;
             $key = 'kids-activities-info';
             $objFlow = Smart::getNextPreviousStep($application, $key);
-            $data['next_page'] = $objFlow->next;
-            $data['show_assessment'] = TRUE;
+            $data['next_page'] = "";
+            $data['show_assessment'] = FALSE;
             $data['prev_page'] = $objFlow->prev;
             $data['percentage'] = $objFlow->percentage;
             
@@ -735,8 +734,8 @@ class PayerReciepientController extends Pixel_Controller {
             $data['app'] = $application;
             $key = 'kids-communicate-info';
             $objFlow = Smart::getNextPreviousStep($application, $key);
-            $data['next_page'] = $objFlow->next;
-            $data['show_assessment'] = TRUE;
+            $data['next_page'] = "";
+            $data['show_assessment'] = FALSE;
             $data['prev_page'] = $objFlow->prev;
             $data['percentage'] = $objFlow->percentage;
             
@@ -783,8 +782,8 @@ class PayerReciepientController extends Pixel_Controller {
             $data['app'] = $application;
             $key = 'kids-dinner-info';
             $objFlow = Smart::getNextPreviousStep($application, $key);
-            $data['next_page'] = $objFlow->next;
-            $data['show_assessment'] = TRUE;
+            $data['next_page'] = "";
+            $data['show_assessment'] = FALSE;
             $data['prev_page'] = $objFlow->prev;
             $data['percentage'] = $objFlow->percentage;
             
@@ -832,8 +831,8 @@ class PayerReciepientController extends Pixel_Controller {
             $data['app'] = $application;
             $key = 'kids-homework-info';
             $objFlow = Smart::getNextPreviousStep($application, $key);
-            $data['next_page'] = $objFlow->next;
-            $data['show_assessment'] = TRUE;
+            $data['next_page'] = "";
+            $data['show_assessment'] = FALSE;
             $data['prev_page'] = $objFlow->prev;
             $data['percentage'] = $objFlow->percentage;
             
@@ -880,8 +879,8 @@ class PayerReciepientController extends Pixel_Controller {
             $data['app'] = $application;
             $key = 'kids-doctor-info';
             $objFlow = Smart::getNextPreviousStep($application, $key);
-            $data['next_page'] = $objFlow->next;
-            $data['show_assessment'] = TRUE;
+            $data['next_page'] = "";
+            $data['show_assessment'] = FALSE;
             $data['prev_page'] = $objFlow->prev;
             $data['percentage'] = $objFlow->percentage;
             
@@ -933,8 +932,8 @@ class PayerReciepientController extends Pixel_Controller {
             $data['app'] = $application;
             $key = 'spouse-complaint-help';
             $objFlow = Smart::getNextPreviousStep($application, $key);
-            $data['next_page'] = $objFlow->next;
-            $data['show_assessment'] = TRUE;
+            $data['next_page'] = "";
+            $data['show_assessment'] = FALSE;
             $data['prev_page'] = $objFlow->prev;
             $data['percentage'] = $objFlow->percentage;
             
@@ -984,8 +983,8 @@ class PayerReciepientController extends Pixel_Controller {
             $data['app'] = $application;
             $key = 'spouse-info';
             $objFlow = Smart::getNextPreviousStep($application, $key);
-            $data['next_page'] = $objFlow->next;
-            $data['show_assessment'] = TRUE;
+            $data['next_page'] ="";
+            $data['show_assessment'] = FASLE;
             
             $data['prev_page'] = $objFlow->prev;
             if((int)$application->relationship_status === 61 || (int)$application->relationship_status === 63){
@@ -1038,8 +1037,8 @@ class PayerReciepientController extends Pixel_Controller {
             $data['app'] = $application;
             $key = 'spouse-job-info';
             $objFlow = Smart::getNextPreviousStep($application, $key);
-            $data['next_page'] = $objFlow->next;
-            $data['show_assessment'] = TRUE;
+            $data['next_page'] = "";
+            $data['show_assessment'] = FASLE;
             $data['prev_page'] = $objFlow->prev;
             $data['percentage'] = $objFlow->percentage;
             
@@ -1085,11 +1084,14 @@ class PayerReciepientController extends Pixel_Controller {
             $application = $this->model->getApplicationById($this->session->appId);
             $data['list'] = $this->model->selectTypes('jobtitle', TRUE);
             $data['app'] = $application;
+
             $key = 'job-info';
             $objFlow = Smart::getNextPreviousStep($application, $key);
             $data['next_page'] = "";//$objFlow->next;
             $data['prev_page'] = $objFlow->prev;
             $data['percentage'] = $objFlow->percentage;
+            //  echo "<pre>";
+            // print_r($data); exit();
             
             $this->load->view('shared/_header');
             $this->load->view('questions/your_job', $data);
@@ -1118,6 +1120,8 @@ class PayerReciepientController extends Pixel_Controller {
             $application = $this->model->getApplicationById($this->session->appId);
             $objFlow = Smart::getNextPreviousStep($application, $key);
             $object->current_seo_uri = $objFlow->next;
+            // echo  $object->job_title;
+            // print_r($objFlow); exit();
             $this->updateApplication($object, $objFlow->next);
         }
     }
@@ -1145,8 +1149,8 @@ class PayerReciepientController extends Pixel_Controller {
             $data['app'] = $application;
             $key = 'business-tax-info';
             $objFlow = Smart::getNextPreviousStep($application, $key);
-            $data['next_page'] = $objFlow->next;
-            $data['show_assessment'] = TRUE;
+            $data['next_page'] = "";
+            $data['show_assessment'] = FALSE;
             $data['prev_page'] = $objFlow->prev;
             $data['percentage'] = $objFlow->percentage;
             
@@ -1195,8 +1199,8 @@ class PayerReciepientController extends Pixel_Controller {
             $data['app'] = $application;
             $key = 'additional-business-info';
             $objFlow = Smart::getNextPreviousStep($application, $key);
-            $data['next_page'] = 'trust-info';
-            $data['show_assessment'] = TRUE;
+            $data['next_page'] = '';
+            $data['show_assessment'] = FALSE;
             $data['prev_page'] = $objFlow->prev;
             $data['percentage'] = $objFlow->percentage;
             
@@ -1248,8 +1252,8 @@ class PayerReciepientController extends Pixel_Controller {
             $data['app'] = $application;
             $key = 'trust-info';
             $objFlow = Smart::getNextPreviousStep($application, $key);
-            $data['next_page'] = $objFlow->next;
-            $data['show_assessment'] = TRUE;
+            $data['next_page'] = "";
+            $data['show_assessment'] = FALSE;
             $data['prev_page'] = ((int)$application->additional_business_info === self::NO)?'additional-business-info':$objFlow->prev;
             $data['percentage'] = $objFlow->percentage;
             
@@ -1298,8 +1302,8 @@ class PayerReciepientController extends Pixel_Controller {
             $data['app'] = $application;
             $key = 'shift-work';
             $objFlow = Smart::getNextPreviousStep($application, $key);
-            $data['next_page'] = $objFlow->next;
-            $data['show_assessment'] = TRUE;
+            $data['next_page'] = "";
+            $data['show_assessment'] = FALSE;
             $data['prev_page'] = $objFlow->prev;
             $data['percentage'] = $objFlow->percentage;
             
@@ -1345,8 +1349,8 @@ class PayerReciepientController extends Pixel_Controller {
             $data['app'] = $application;
             $key = 'nights-without-spouse';
             $objFlow = Smart::getNextPreviousStep($application, $key);
-            $data['next_page'] = $objFlow->next;
-            $data['show_assessment'] = TRUE;
+            $data['next_page'] = "";
+            $data['show_assessment'] = FALSE;
             $data['prev_page'] = $objFlow->prev;
             $data['percentage'] = $objFlow->percentage;
             
@@ -1393,8 +1397,8 @@ class PayerReciepientController extends Pixel_Controller {
             $data['app'] = $application;
             $key = 'have-date';
             $objFlow = Smart::getNextPreviousStep($application, $key);
-            $data['next_page'] = $objFlow->next;
-            $data['show_assessment'] = TRUE;
+            $data['next_page'] = "";
+            $data['show_assessment'] = FALSE;
             $data['prev_page'] = $objFlow->prev;
             $data['percentage'] = $objFlow->percentage;
 
@@ -1440,8 +1444,8 @@ class PayerReciepientController extends Pixel_Controller {
             $data['app'] = $application;
             $key = 'nights-not-home';
             $objFlow = Smart::getNextPreviousStep($application, $key);
-            $data['next_page'] = $objFlow->next;
-            $data['show_assessment'] = TRUE;
+            $data['next_page'] = "";
+            $data['show_assessment'] = FALSE;
             $data['prev_page'] = $objFlow->prev;
             $data['percentage'] = $objFlow->percentage;
 
@@ -1487,8 +1491,8 @@ class PayerReciepientController extends Pixel_Controller {
             $data['app'] = $application;
             $key = 'spouse-nights-not-home';
             $objFlow = Smart::getNextPreviousStep($application, $key);
-            $data['next_page'] = $objFlow->next;
-            $data['show_assessment'] = TRUE;
+            $data['next_page'] = "";
+            $data['show_assessment'] = FALSE;
             $data['prev_page'] = $objFlow->prev;
             $data['percentage'] = $objFlow->percentage;
 
@@ -1534,8 +1538,8 @@ class PayerReciepientController extends Pixel_Controller {
             $data['app'] = $application;
             $key = 'nights-without-you';
             $objFlow = Smart::getNextPreviousStep($application, $key);
-            $data['next_page'] = $objFlow->next;
-            $data['show_assessment'] = TRUE;
+            $data['next_page'] = "";
+            $data['show_assessment'] = FALSE;
             $data['prev_page'] = $objFlow->prev;
             $data['percentage'] = $objFlow->percentage;
 
@@ -1582,8 +1586,8 @@ class PayerReciepientController extends Pixel_Controller {
             $data['app'] = $application;
             $key = 'drinks-per-week';
             $objFlow = Smart::getNextPreviousStep($application, $key);
-            $data['next_page'] = $objFlow->next;
-            $data['show_assessment'] = TRUE;
+            $data['next_page'] = "";
+            $data['show_assessment'] = FALSE;
             $data['prev_page'] = $objFlow->prev;
             $data['percentage'] = $objFlow->percentage;
 
@@ -1630,8 +1634,8 @@ class PayerReciepientController extends Pixel_Controller {
             $data['app'] = $application;
             $key = 'drugs-info';
             $objFlow = Smart::getNextPreviousStep($application, $key);
-            $data['next_page'] = $objFlow->next;
-            $data['show_assessment'] = TRUE;
+            $data['next_page'] = "";
+            $data['show_assessment'] = FALSE;
             $data['prev_page'] = $objFlow->prev;
             $data['percentage'] = $objFlow->percentage;
 
@@ -1677,8 +1681,8 @@ class PayerReciepientController extends Pixel_Controller {
             $data['app'] = $application;
             $key = 'addiction-info';
             $objFlow = Smart::getNextPreviousStep($application, $key);
-            $data['next_page'] = $objFlow->next;
-            $data['show_assessment'] = TRUE;
+            $data['next_page'] ="";
+            $data['show_assessment'] = FALSE;
             $data['prev_page'] = $objFlow->prev;
             $data['percentage'] = $objFlow->percentage;
 
@@ -1725,8 +1729,8 @@ class PayerReciepientController extends Pixel_Controller {
             $data['app'] = $application;
             $key = 'hit-spouse-info';
             $objFlow = Smart::getNextPreviousStep($application, $key);
-            $data['next_page'] = $objFlow->next;
-            $data['show_assessment'] = TRUE;
+            $data['next_page'] = "";
+            $data['show_assessment'] = FALSE;
             $data['prev_page'] = $objFlow->prev;
             $data['percentage'] = $objFlow->percentage;
 
@@ -1775,8 +1779,8 @@ class PayerReciepientController extends Pixel_Controller {
             $data['app'] = $application;
             $key = 'hit-kids-info';
             $objFlow = Smart::getNextPreviousStep($application, $key);
-            $data['next_page'] = $objFlow->next;
-            $data['show_assessment'] = TRUE;
+            $data['next_page'] = "";
+            $data['show_assessment'] = FALSE;
             $data['prev_page'] = $objFlow->prev;
             $data['percentage'] = $objFlow->percentage;
 
@@ -1826,8 +1830,8 @@ class PayerReciepientController extends Pixel_Controller {
             $data['app'] = $application;
             $key = 'dating-profile';
             $objFlow = Smart::getNextPreviousStep($application, $key);
-            $data['next_page'] = $objFlow->next;
-            $data['show_assessment'] = TRUE;
+            $data['next_page'] = "";
+            $data['show_assessment'] = FALSE;
             $data['prev_page'] = $objFlow->prev;
             $data['percentage'] = $objFlow->percentage;
 
@@ -1873,8 +1877,8 @@ class PayerReciepientController extends Pixel_Controller {
             $data['app'] = $application;
             $key = 'slept-on-couch';
             $objFlow = Smart::getNextPreviousStep($application, $key);
-            $data['next_page'] = $objFlow->next;
-            $data['show_assessment'] = TRUE;
+            $data['next_page'] = "";
+            $data['show_assessment'] = FALSE;
             $data['prev_page'] = $objFlow->prev;
             $data['percentage'] = $objFlow->percentage;
 
@@ -1921,8 +1925,8 @@ class PayerReciepientController extends Pixel_Controller {
             $data['app'] = $application;
             $key = 'has-relationship';
             $objFlow = Smart::getNextPreviousStep($application, $key);
-            $data['next_page'] = $objFlow->next;
-            $data['show_assessment'] = TRUE;
+            $data['next_page'] = "";
+            $data['show_assessment'] = FALSE;
             $data['prev_page'] = $objFlow->prev;
             $data['percentage'] = $objFlow->percentage;
 
@@ -1971,8 +1975,8 @@ class PayerReciepientController extends Pixel_Controller {
             $data['app'] = $application;
             $key = 'house-liens';
             $objFlow = Smart::getNextPreviousStep($application, $key);
-            $data['next_page'] = $objFlow->next;
-            $data['show_assessment'] = TRUE;
+            $data['next_page'] = "";
+            $data['show_assessment'] = FALSE;
             $data['prev_page'] = $objFlow->prev;
             $data['percentage'] = $objFlow->percentage;
 
@@ -2018,8 +2022,8 @@ class PayerReciepientController extends Pixel_Controller {
             $data['app'] = $application;
             $key = 'loan-money';
             $objFlow = Smart::getNextPreviousStep($application, $key);
-            $data['next_page'] = $objFlow->next;
-            $data['show_assessment'] = TRUE;
+            $data['next_page'] = "";
+            $data['show_assessment'] = FALSE;
             $data['prev_page'] = $objFlow->prev;
             $data['percentage'] = $objFlow->percentage;
 
@@ -2065,8 +2069,8 @@ class PayerReciepientController extends Pixel_Controller {
             $data['app'] = $application;
             $key = 'your-social-class';
             $objFlow = Smart::getNextPreviousStep($application, $key);
-            $data['next_page'] = $objFlow->next;
-            $data['show_assessment'] = TRUE;
+            $data['next_page'] = "";
+            $data['show_assessment'] = FALSE;
             $data['prev_page'] = $objFlow->prev;
             $data['percentage'] = $objFlow->percentage;
 
@@ -2112,8 +2116,8 @@ class PayerReciepientController extends Pixel_Controller {
             $data['app'] = $application;
             $key = 'spouse-social-class';
             $objFlow = Smart::getNextPreviousStep($application, $key);
-            $data['next_page'] = $objFlow->next;
-            $data['show_assessment'] = TRUE;
+            $data['next_page'] = "";
+            $data['show_assessment'] = FALSE;
             $data['prev_page'] = $objFlow->prev;
             $data['percentage'] = $objFlow->percentage;
 
@@ -2164,6 +2168,8 @@ class PayerReciepientController extends Pixel_Controller {
             $data['percentage'] = $objFlow->percentage;
              $data['show_assessment'] = false;
 
+             // print_r($application); exit();
+
             $this->load->view('shared/_header');
             $this->load->view('questions/people_confide', $data);
             $this->load->view('shared/_footer');
@@ -2211,7 +2217,7 @@ class PayerReciepientController extends Pixel_Controller {
             $key = 'influencer';
             $objFlow = Smart::getNextPreviousStep($application, $key);
             $data['next_page'] = "";//$objFlow->next;
-            $data['show_assessment'] = TRUE;
+            $data['show_assessment'] = FALSE;
             $data['prev_page'] = $objFlow->prev;
             $data['percentage'] = $objFlow->percentage;
             
@@ -2317,8 +2323,8 @@ class PayerReciepientController extends Pixel_Controller {
             
             $key =  "affectionate-salutation";
             $objFlow = Smart::getNextPreviousStep($application, $key);
-            $data['next_page'] = $objFlow->next;
-            $data['show_assessment'] = TRUE;
+            $data['next_page'] = "";
+            $data['show_assessment'] = FASLE;
             $data['prev_page'] = $objFlow->prev;
             $data['percentage'] = $objFlow->percentage;
             
@@ -2368,8 +2374,8 @@ class PayerReciepientController extends Pixel_Controller {
             
             $key =  "inherited-income";
             $objFlow = Smart::getNextPreviousStep($application, $key);
-            $data['next_page'] = $objFlow->next;
-            $data['show_assessment'] = TRUE;
+            $data['next_page'] = "";
+            $data['show_assessment'] = FALSE;
             $data['prev_page'] = $objFlow->prev;
             $data['percentage'] = $objFlow->percentage;
             
@@ -2420,8 +2426,8 @@ class PayerReciepientController extends Pixel_Controller {
             
             $key =  "financial-control";
             $objFlow = Smart::getNextPreviousStep($application, $key);
-            $data['next_page'] = $objFlow->next;
-            $data['show_assessment'] = TRUE;
+            $data['next_page'] = "";
+            $data['show_assessment'] = FALSE;
             $data['prev_page'] = $objFlow->prev;
             $data['percentage'] = $objFlow->percentage;
             
@@ -2469,8 +2475,8 @@ class PayerReciepientController extends Pixel_Controller {
             
             $key =  "withheld-sex";
             $objFlow = Smart::getNextPreviousStep($application, $key);
-            $data['next_page'] = $objFlow->next;
-            $data['show_assessment'] = TRUE;
+            $data['next_page'] = "";
+            $data['show_assessment'] = FALSE;
             $data['prev_page'] = $objFlow->prev;
             $data['percentage'] = $objFlow->percentage;
             
@@ -2518,8 +2524,8 @@ class PayerReciepientController extends Pixel_Controller {
             
             $key =  "pet-abuse";
             $objFlow = Smart::getNextPreviousStep($application, $key);
-            $data['next_page'] = $objFlow->next;
-            $data['show_assessment'] = TRUE;
+            $data['next_page'] = "";
+            $data['show_assessment'] = FALSE;
             $data['prev_page'] = $objFlow->prev;
             $data['percentage'] = $objFlow->percentage;
             
@@ -2572,8 +2578,8 @@ class PayerReciepientController extends Pixel_Controller {
             
             $key =  "ethnic-background";
             $objFlow = Smart::getNextPreviousStep($application, $key);
-            $data['next_page'] = $objFlow->next;
-            $data['show_assessment'] = TRUE;
+            $data['next_page'] = "";
+            $data['show_assessment'] = FALSE;
             $data['prev_page'] = $objFlow->prev;
             $data['percentage'] = $objFlow->percentage;
             
@@ -2622,8 +2628,8 @@ class PayerReciepientController extends Pixel_Controller {
             
             $key =  "automobile";
             $objFlow = Smart::getNextPreviousStep($application, $key);
-            $data['next_page'] = $objFlow->next;
-            $data['show_assessment'] = TRUE;
+            $data['next_page'] = "";
+            $data['show_assessment'] = FALSE;
             $data['prev_page'] = $objFlow->prev;
             $data['percentage'] = $objFlow->percentage;
             
@@ -2672,8 +2678,8 @@ class PayerReciepientController extends Pixel_Controller {
             
             $key =  "other-autos";
             $objFlow = Smart::getNextPreviousStep($application, $key);
-            $data['next_page'] = $objFlow->next;
-            $data['show_assessment'] = TRUE;
+            $data['next_page'] = "";
+            $data['show_assessment'] = FALSE;
             $data['prev_page'] = $objFlow->prev;
             $data['percentage'] = $objFlow->percentage;
             
@@ -2722,8 +2728,8 @@ class PayerReciepientController extends Pixel_Controller {
             
             $key =  "collectables";
             $objFlow = Smart::getNextPreviousStep($application, $key);
-            $data['next_page'] = $objFlow->next;
-            $data['show_assessment'] = TRUE;
+            $data['next_page'] = "";
+            $data['show_assessment'] = FALSE;
             $data['prev_page'] = $objFlow->prev;
             $data['percentage'] = $objFlow->percentage;
             
@@ -2772,8 +2778,8 @@ class PayerReciepientController extends Pixel_Controller {
             
             $key =  "gadgets";
             $objFlow = Smart::getNextPreviousStep($application, $key);
-            $data['next_page'] = $objFlow->next;
-            $data['show_assessment'] = TRUE;
+            $data['next_page'] = "";
+            $data['show_assessment'] = FALSE;
             $data['prev_page'] = $objFlow->prev;
             $data['percentage'] = $objFlow->percentage;
             
@@ -2822,8 +2828,8 @@ class PayerReciepientController extends Pixel_Controller {
             
             $key =  "bank-accounts";
             $objFlow = Smart::getNextPreviousStep($application, $key);
-            $data['next_page'] = $objFlow->next;
-            $data['show_assessment'] = TRUE;
+            $data['next_page'] = "";
+            $data['show_assessment'] = FALSE;
             $data['prev_page'] = $objFlow->prev;
             $data['percentage'] = $objFlow->percentage;
             
@@ -2872,8 +2878,8 @@ class PayerReciepientController extends Pixel_Controller {
             
             $key =  "crypto-currencies";
             $objFlow = Smart::getNextPreviousStep($application, $key);
-            $data['next_page'] = $objFlow->next;
-            $data['show_assessment'] = TRUE;
+            $data['next_page'] ="";
+            $data['show_assessment'] = FALSE;
             $data['prev_page'] = $objFlow->prev;
             $data['percentage'] = $objFlow->percentage;
             
@@ -2922,8 +2928,8 @@ class PayerReciepientController extends Pixel_Controller {
             
             $key =  "money-owed-to-you";
             $objFlow = Smart::getNextPreviousStep($application, $key);
-            $data['next_page'] = $objFlow->next;
-            $data['show_assessment'] = TRUE;
+            $data['next_page'] = "";
+            $data['show_assessment'] = FALSE;
             $data['prev_page'] = $objFlow->prev;
             $data['percentage'] = $objFlow->percentage;
             
@@ -3022,8 +3028,8 @@ class PayerReciepientController extends Pixel_Controller {
             
             $key =  "business-value-assets";
             $objFlow = Smart::getNextPreviousStep($application, $key);
-            $data['next_page'] = $objFlow->next;
-            $data['show_assessment'] = TRUE;
+            $data['next_page'] = "";
+            $data['show_assessment'] = FALSE;
             $data['prev_page'] = $objFlow->prev;
             $data['percentage'] = $objFlow->percentage;
             
@@ -3072,8 +3078,8 @@ class PayerReciepientController extends Pixel_Controller {
             
             $key =  "disability-insurance";
             $objFlow = Smart::getNextPreviousStep($application, $key);
-            $data['next_page'] = $objFlow->next;
-            $data['show_assessment'] = TRUE;
+            $data['next_page'] = "";
+            $data['show_assessment'] = FALSE;
             $data['prev_page'] = $objFlow->prev;
             $data['percentage'] = $objFlow->percentage;
             
@@ -3122,8 +3128,8 @@ class PayerReciepientController extends Pixel_Controller {
             
             $key =  "personal-loans";
             $objFlow = Smart::getNextPreviousStep($application, $key);
-            $data['next_page'] = $objFlow->next;
-            $data['show_assessment'] = TRUE;
+            $data['next_page'] = "";
+            $data['show_assessment'] = FALSE;
             $data['prev_page'] = $objFlow->prev;
             $data['percentage'] = $objFlow->percentage;
             
@@ -3172,8 +3178,8 @@ class PayerReciepientController extends Pixel_Controller {
             
             $key =  "personal-credit-line";
             $objFlow = Smart::getNextPreviousStep($application, $key);
-            $data['next_page'] = $objFlow->next;
-            $data['show_assessment'] = TRUE;
+            $data['next_page'] = "";
+            $data['show_assessment'] = FALSE;
             $data['prev_page'] = $objFlow->prev;
             $data['percentage'] = $objFlow->percentage;
             
@@ -3222,8 +3228,8 @@ class PayerReciepientController extends Pixel_Controller {
             
             $key =  "credit-cards";
             $objFlow = Smart::getNextPreviousStep($application, $key);
-            $data['next_page'] = $objFlow->next;
-            $data['show_assessment'] = TRUE;
+            $data['next_page'] = "";
+            $data['show_assessment'] = FALSE;
             $data['prev_page'] = $objFlow->prev;
             $data['percentage'] = $objFlow->percentage;
             
@@ -3272,8 +3278,8 @@ class PayerReciepientController extends Pixel_Controller {
             
             $key =  "other-debt";
             $objFlow = Smart::getNextPreviousStep($application, $key);
-            $data['next_page'] = $objFlow->next;
-            $data['show_assessment'] = TRUE;
+            $data['next_page'] = "";
+            $data['show_assessment'] = FALSE;
             $data['prev_page'] = $objFlow->prev;
             $data['percentage'] = $objFlow->percentage;
             
@@ -3322,8 +3328,8 @@ class PayerReciepientController extends Pixel_Controller {
             
             $key =  "business-credit-line";
             $objFlow = Smart::getNextPreviousStep($application, $key);
-            $data['next_page'] = $objFlow->next;
-            $data['show_assessment'] = TRUE;
+            $data['next_page'] = "";
+            $data['show_assessment'] = FALSE;
             $data['prev_page'] = $objFlow->prev;
             $data['percentage'] = $objFlow->percentage;
             
@@ -3372,8 +3378,8 @@ class PayerReciepientController extends Pixel_Controller {
             
             $key =  "assets-info";
             $objFlow = Smart::getNextPreviousStep($application, $key);
-            $data['next_page'] = $objFlow->next;
-            $data['show_assessment'] = TRUE;
+            $data['next_page'] = "";
+            $data['show_assessment'] = FALSE;
             $data['prev_page'] = $objFlow->prev;
             $data['percentage'] = $objFlow->percentage;
             
@@ -3424,8 +3430,8 @@ class PayerReciepientController extends Pixel_Controller {
             
             $key =  "asset-details-info";
             $objFlow = Smart::getNextPreviousStep($application, $key);
-            $data['next_page'] = $objFlow->next;
-            $data['show_assessment'] = TRUE;
+            $data['next_page'] = "";
+            $data['show_assessment'] = FALSE;
             $data['prev_page'] = $objFlow->prev;
             $data['percentage'] = $objFlow->percentage;
             if((int)$application->num_properties <= 0){
@@ -3486,8 +3492,8 @@ class PayerReciepientController extends Pixel_Controller {
             
             $key =  "num-gifts";
             $objFlow = Smart::getNextPreviousStep($application, $key);
-            $data['next_page'] = $objFlow->next;
-            $data['show_assessment'] = TRUE;
+            $data['next_page'] = "";
+            $data['show_assessment'] = FALSE;
             $data['prev_page'] = $objFlow->prev;
             $data['percentage'] = $objFlow->percentage;
             
@@ -3540,8 +3546,8 @@ class PayerReciepientController extends Pixel_Controller {
             
             $key =  "gift-detail-info";
             $objFlow = Smart::getNextPreviousStep($application, $key);
-            $data['next_page'] = $objFlow->next;
-            $data['show_assessment'] = TRUE;
+            $data['next_page'] = "";
+            $data['show_assessment'] = FALSE;
             $data['prev_page'] = $objFlow->prev;
             $data['percentage'] = $objFlow->percentage;
             

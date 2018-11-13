@@ -34,37 +34,68 @@ class EmailsHelper {
      * 
      * @return  void
      */
-    public function shootEmail($param, $model=NULL) {
-        //actionName, debug, (array) params, 
-        $this->CI = & get_instance();
-        if(is_array($param)){
-            extract($param);
+
+    // public function shootEmail($param, $model=NULL) {
+    //     //actionName, debug, (array) params, 
+    //     $this->CI = & get_instance();
+    //     if(is_array($param)){
+    //         extract($param);
         
-            $func = $actionName."Success";
-            $this->_html = $this->$func($param);
-            $subject = $heading;
-            $email = $email;
-            $this->_hash = Smart::makeIVHash($email);
-            if($model !== NULL){
-                $this->queueEmail($param, $model, TRUE);
-                //$this->_html = str_replace("{WEB_URL}", makeWebmailUrl($this->_hash), $this->_html);
-            }
+    //         $func = $actionName."Success";
+    //         $this->_html = $this->$func($param);
+    //         $subject = $heading;
+    //         $email = $email;
+    //         $this->_hash = Smart::makeIVHash($email);
+    //         if($model !== NULL){
+    //             $this->queueEmail($param, $model, TRUE);
+    //             //$this->_html = str_replace("{WEB_URL}", makeWebmailUrl($this->_hash), $this->_html);
+    //         }
             
-            $this->CI->load->library('email');
-            $this->CI->email->initialize();
-            $this->CI->email->from($this->CI->config->item('notification_sender_address'), $this->CI->config->item('notification_sender'));
-            $this->CI->email->to($email);
+    //         $this->CI->load->library('email');
+    //         $this->CI->email->initialize();
+    //         $this->CI->email->from($this->CI->config->item('notification_sender_address'), $this->CI->config->item('notification_sender'));
+    //         $this->CI->email->to($email);
             
-            $this->CI->email->subject($subject);
-            $this->CI->email->message($this->_html);        
-            if(!$this->_test)
-            {
-                $this->CI->email->send();
-            }
+    //         $this->CI->email->subject($subject);
+    //         $this->CI->email->message($this->_html);        
+    //         if(!$this->_test)
+    //         {
+    //             $this->CI->email->send();
+
+    //             $error = $this->email->print_debugger(array('headers'));
+    //         }
             
-        }
+    //     }
         
         
+    // }
+
+    public function shootEmail($param, $model=NULL)
+    {
+        $this->load->library("PhpMailerLib");
+          $mail = $this->phpmailerlib->load();
+
+            $mail->SMTPDebug = 2; 
+    
+            $mail->setFrom($this->CI->config->item('notification_sender_address'), $this->CI->config->item('notification_sender'));
+            $mail->addAddress($email);     // Add a recipient
+            $mail->isHTML(true);                                  // Set email format to HTML
+            $mail->Subject = $subject;
+            $mail->Body    = $this->_html;
+
+            $abc = $mail->send();
+
+            if ($abc) {
+
+                echo ('Seems like your SMTP settings is set correctly. Check your email now.');
+
+            }else{
+               echo ('<h1>Your SMTP settings are not set correctly here is the debug log.</h1><br />' . $mail->ErrorInfo);
+
+
+           }
+
+       
     }
     /**
      * Add Email in Queue

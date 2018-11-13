@@ -24,6 +24,10 @@
                         }
                 ?>
                 <div id="register-form" class="register-form">
+                    <div>
+                    <h5>Life Decision : <?php echo $this->session->userdata('life_decision'); ?></h5>
+                    <hr>
+                  </div>
                     <div class="row">
                         <div class="section-field col-md-6">
                         <label><?php echo str_replace("{VAR}", $infObj->name, $this->labelArray['inf_first_name']);?></label>

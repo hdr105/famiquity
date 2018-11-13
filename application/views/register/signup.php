@@ -76,8 +76,8 @@
                         </div>
                     </div>*/?>
                     <div class="section-field">
-                        <?php //echo $widget; ?>
-                        <?php //echo $script; ?>
+                        <?php echo $widget; ?>
+                        <?php echo $script; ?>
                     </div>
                 </div>
                 <button class="button mt-20" type="submit">

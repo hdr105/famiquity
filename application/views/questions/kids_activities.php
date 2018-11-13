@@ -13,21 +13,36 @@
                 echo Smart::formErrors();
                 ?>
                 <div id="register-form" class="register-form">
+                    <div>
+                    <h5>Life Decision : <?php echo $this->session->userdata('life_decision'); ?></h5>
+                    <hr>
+                  </div>
                     <div class="section-field">
-                         <div class="input-group-btn help-select-list"> 
-                            <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="top"  data-content="Extracurricular means paid activities like sports, music, special needs, etc"><i class="fa fa-2x fa-question-circle"></i></button>
-                        </div>
+    
                         <label><?php echo $this->labelArray['kids_activities'];?></label>
 
-                        <div class="field-widget remember-checkbox">
+                     <!--    <div class="field-widget remember-checkbox">
                             <?php echo Smart::checkListSmart('kids_activities[]', $list, 'name', 'name', explode(",", $app->kids_activities))?>
-                        </div>
+                        </div> -->
+            
+
+
+
+
+                        
 
                     </div> 
+                    <div class="input-group">
+                       <div class="multi" id="multi" style="height: 50px;"></div>
+
+                       <div class="input-group-btn help-select-list"> 
+                            <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="top"  data-content="Extracurricular means paid activities like sports, music, special needs, etc"><i class="fa fa-2x fa-question-circle"></i></button>
+                        </div>
+                </div>
                     <br>
                     <div class="section-field">
                         <label><?php echo $this->labelArray['activities_cost'];?></label>
-                        <div class="input-group">
+                        <div class ='field-widget'>
                             <input type="number" min="0" step="500" class="web form-control" required="required"  
                             autocomplete="off" name="activities_cost"  value="<?php echo Smart::setValue('activities_cost', $app->activities_cost); ?>"
                             data-message="<?php echo lang('req_kids_activites_cost') ?>" style="height: 48px;">
@@ -36,6 +51,8 @@
                             </div>
                         </div>
                     </div>
+
+                      <input type="hidden" name="kids_activities" class="kids_activities">
                 </div>
                 <?php $this->load->view('shared/_buttons', array("prev_page"=>$prev_page,"next_page"=>$next_page, "show_assessment"=>$show_assessment));?>
             </div>
@@ -47,3 +64,43 @@
     </div>
 
 </section>
+
+<script>
+
+  $(document).ready(function() {
+
+      
+      $(".control").css("display", "none");
+
+  });
+
+$('.multi').multi_select({
+  selectColor: 'red',
+  selectSize: 'big',
+  selectText: 'What extracurricular activities are your kids currently in',
+  duration: 300,
+  easing: 'slide',
+  listMaxHeight: 200,
+  selectedCount: 2,
+  sortByText: true,
+  fillButton: true,
+  data: {
+      <?php
+      foreach ($list as $value) {
+        $value = (array) $value;
+        $name =  $value['name'];
+        $id = $value['id'];
+        ?>
+    "<?php echo $id; ?>": "<?php echo $name; ?>",
+
+<?php } ?>
+  },
+  onSelect: function(values) {
+    $(".kids_activities").val(values);
+
+    //console.log('return values: ', values);
+  },
+  });
+
+
+  </script>

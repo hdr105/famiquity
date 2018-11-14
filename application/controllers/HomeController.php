@@ -11,6 +11,7 @@
  *
  * @author Saqib Ahmad
  */
+
 class HomeController extends Pixel_Controller {
     public $labelArray = [];
     public function index() {

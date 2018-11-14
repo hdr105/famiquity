@@ -13,6 +13,10 @@
                     echo Smart::formErrors();
                 ?>
                 <div id="register-form" class="register-form">
+                    <div>
+                    <h5>Life Decision : <?php echo $this->session->userdata('life_decision'); ?></h5>
+                    <hr>
+                  </div>
                     <div class="section-field">
                         <label><?php echo $this->labelArray['bus_personal_expense'];?></label>
                         <div class="field-widget">
@@ -24,7 +28,7 @@
                     <br>
                     <div class="section-field">
                         <label><?php echo $this->labelArray['share_percentage'];?></label>
-                        <div class="field-widget">
+                        <div class="field-widget" style="width: 249px;">
                             <input type="number" class="form-control" min="0" max="100" 
                                    autocomplete="off" name="share_percentage"  value="<?php echo Smart::setValue('share_percentage', $app->share_percentage); ?>"
                                    data-message="<?php echo lang('req_addincome_percentage') ?>">

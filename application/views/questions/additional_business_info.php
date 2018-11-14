@@ -13,6 +13,10 @@
                     echo Smart::formErrors();
                 ?>
                 <div id="register-form" class="register-form">
+                    <div>
+                    <h5>Life Decision : <?php echo $this->session->userdata('life_decision'); ?></h5>
+                    <hr>
+                  </div>
                     <div class="section-field">
                         <label><?php echo $this->labelArray['additional_business_info'];?></label>
                         <div class="input-group">

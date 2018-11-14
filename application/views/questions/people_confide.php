@@ -1,3 +1,5 @@
+
+
 <?php $this->load->view('shared/_page_banner_empty');  ?>
 <section class="gray-bg page-section-ptb o-hidden">
     <?php $this->load->view('shared/_page_header', array("txt1" => "", "txt2" => "People you Confide with", "txt3" => "")); ?>
@@ -13,12 +15,22 @@
                 echo Smart::formErrors();
                 ?>
                 <div id="register-form" class="register-form">
+                  <div>
+                    <h5>Life Decision : <?php echo $this->session->userdata('life_decision'); ?></h5>
+                    <hr>
+                  </div>
                     <div class="section-field">
                         <label><?php echo $this->labelArray['confide'];?></label>
                         <div class="field-widget remember-checkbox">
                             <!-- <?php echo Smart::checkListSmart('confide[]', $list, 'id', 'name', explode(",", $app->confide))?>  -->
                             <!-- junaid -->
-                             <div class="multi" id="multi"></div>
+                             <div class="input-group">
+                             <div class="multi" id="multi" style="height: 50px;"></div>
+
+                            <div class="input-group-btn help-select-list"> 
+                                <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="top"  data-content="After making selections, move the cursor off the box, and click on the screen to reduce the box"><i class="fa fa-2x fa-question-circle"></i></button>
+                            </div>
+                          </div>
 
 
                              <input type="hidden" name="confide" class="confide">
@@ -57,9 +69,16 @@
 </section>
 <script>
 
+  $(document).ready(function() {
+
+      
+      $(".control").css("display", "none");
+
+  });
+
 $('.multi').multi_select({
   selectColor: 'red',
-  selectSize: 'small',
+  selectSize: 'big',
   selectText: 'Select all that apply',
   duration: 300,
   easing: 'slide',
@@ -84,18 +103,6 @@ $('.multi').multi_select({
     //console.log('return values: ', values);
   },
   });
-  // $('#save').on('click', function(event) {
-  //           console.log($('#multi').multi_select('getSelectedValues'));
-  //   var json = { items: $('#multi').multi_select('getSelectedValues') };
-  //   if (json.items.length) {
-  //       console.log(json.items);
 
-  //     $(json.items).each(function(index, item) {
-  //       ul.append(
-  //         '<li style="display: block;">' + item + '</li>'
-  //       );
-  //     });
-  //   }
-  // })
 
   </script>

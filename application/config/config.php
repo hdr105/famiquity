@@ -1,8 +1,12 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-//$config['base_url'] = 'https://www.famiquity.com/';
+//$config['base_url'] = 'http://famiquity.blogbaaz.com/';
+//$config['base_url'] = 'http://' . $_SERVER['HTTP_HOST'] . "/famiquity.blogbaaz.com/";
 $config['base_url'] = 'http://localhost/famiquity/';
+
+
+
 $config['index_page'] = '';
 $config['uri_protocol']	= 'REQUEST_URI';
 $config['url_suffix'] = '';
@@ -53,5 +57,5 @@ $config['compress_output'] = FALSE;
 $config['time_reference'] = 'local';
 $config['rewrite_short_tags'] = FALSE;
 $config['proxy_ips'] = '';
-$config['notification_sender_address'] = 'noreply@famiquity.com';
+$config['notification_sender_address'] = 'haadi.javaid@gmail.com';
 $config['notification_sender'] = 'Famiquity';

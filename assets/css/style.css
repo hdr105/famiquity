@@ -1,3 +1,16 @@
+
+
+    .btn-custom{
+        color: #fff;
+        background-color: #9f1204;
+        border-color: #9f1204;
+    }
+
+     .btn-custom:hover {
+      color: #fff;
+      background-color: #ad0105;
+      border-color: #9f1204;
+}
 .default { background: transparent; z-index: 9999; position: absolute; width: 100%; }
 /*topbar*/
 .topbar { border-bottom: 1px solid rgba(255, 255, 255, 0.1); padding: 14px 0; }
@@ -1744,8 +1757,6 @@ input[type=file]{background: #fff; padding: 10px; width: 100%; border: 1px solid
 .terms-agree p{text-align: justify;}
 .terms-agree h2{color: #9f0003;}
 .terms-agree h3{font-weight: 700; font-size: 18px;}
-
-
 
 
 

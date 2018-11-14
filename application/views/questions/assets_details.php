@@ -14,6 +14,10 @@
                 for ($i = 0; $i < $app->num_properties; $i++):
                     ?>
                     <div id="register-form" class="register-form">
+                        <div>
+                    <h5>Life Decision : <?php echo $this->session->userdata('life_decision'); ?></h5>
+                    <hr>
+                  </div>
                         <div class="section-field">
                             <label><?php echo str_replace("{VAR}", Constants::getnumberToText($i+1), $this->labelArray['assets_property_title']);?></label>
                             <div class="input-group">
@@ -38,7 +42,7 @@
                         </div>
                         <div class="section-field">
                             <label><?php echo str_replace("{VAR}", Constants::getnumberToText($i+1), $this->labelArray['assets_property_value']);?></label>
-                            <div class="input-group">
+                            <div class ='field-widget'>
                                 <input type="number" min="0" step="25000" class="web form-control" name="property_value_<?php echo $i; ?>"  
                                        value="<?php echo Smart::setValue('property_value_' . $i, ($properties !== NULL) ? $properties[$i]->property_value : ""); ?>"
                                        data-message="Please Provide property value" style="height: 48px;">
@@ -49,7 +53,7 @@
                         </div> 
                         <div class="section-field">
                             <label><?php echo str_replace("{VAR}", Constants::getnumberToText($i+1), $this->labelArray['assets_property_liens']);?></label>
-                            <div class="input-group">
+                            <div class ='field-widget'>
                                 <input type="number" min="0" step="25000" class="web form-control" name="property_liens_<?php echo $i; ?>"  
                                        value="<?php echo Smart::setValue('property_liens_' . $i, ($properties !== NULL) ? $properties[$i]->property_liens : ""); ?>"
                                        data-message="" style="height: 48px;">

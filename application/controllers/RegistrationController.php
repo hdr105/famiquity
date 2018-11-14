@@ -14,17 +14,60 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  */
 class RegistrationController extends Pixel_Controller {
 
+
+    public function send_mail()
+    {
+        $form_data = array("email"=>'ijunaidraza@gmail.com');
+        $this->load->library("PhpMailerLib");
+        $mail = $this->phpmailerlib->shootEmail($form_data);
+
+        if (!$mail) {
+
+            $msg = $mail->ErrorInfo;
+        }
+        else
+        {
+            $msg = "Email Send";
+            echo $msg;
+        }
+    }
+
+    public function test_email(){
+          $this->load->library("PhpMailerLib");
+
+         $mail = $this->phpmailerlib->contact_us_mail('svsc');
+
+           //  $mail->SMTPDebug = 2; 
+    
+           //  $mail->setFrom('haadi.javaid@gmail.com', 'Haider');
+           //  $mail->addAddress('haadi.javaid@gmail.com', '');     // Add a recipient
+           //  $mail->isHTML(true);                                  // Set email format to HTML
+           //  $mail->Subject = 'TEST';
+           //  $mail->Body    = '<b>TEST</b>';
+
+           //  $abc = $mail->send();
+
+           //  if ($abc) {
+
+           //      echo ('Seems like your SMTP settings is set correctly. Check your email now.');
+
+           //  }else{
+           //     echo ('<h1>Your SMTP settings are not set correctly here is the debug log.</h1><br />' . $mail->ErrorInfo);
+
+
+           // }
+
+       
+    }
+
     
     public function registrationCompletePage() {
-        if ($this->isAuthorized()) {
-            redirect(base_url('sign-in'));
-        }
+        // if ($this->isAuthorized()) {
+        //     redirect(base_url('sign-in'));
+        // }
 
         Smart::setTitle('Register');
         Smart::setDescription('Register');
-
-
-
         $this->load->view('shared/_header');
         $this->load->view('register/thanks');
         $this->load->view('shared/_footer');
@@ -45,6 +88,7 @@ class RegistrationController extends Pixel_Controller {
             'error' => $this->session->flashdata('error'),
         );
         $data['provinces'] = $this->model->selectTypes('state');
+
         $this->load->view('shared/_header');
         //$this->load->view('register/temp', $data);//
         $this->load->view('register/signup', $data);
@@ -92,6 +136,20 @@ class RegistrationController extends Pixel_Controller {
             
             //$this->stepOneRoutine($customerObject);
         }
+        
+    }
+
+    public function termsPage() {
+      
+   
+            Smart::setTitle('Accept Terms and Conditions');
+            Smart::setDescription('Register');
+            $this->load->view('shared/_header');
+            //$this->load->view('register/temp', $data);//
+            $this->load->view('register/terms');
+            $this->load->view('shared/_footer');
+            
+           
         
     }
 
@@ -304,7 +362,8 @@ class RegistrationController extends Pixel_Controller {
         );
         $data['provinces'] = $this->model->selectTypes('state');
         $this->load->view('shared/_header');
-        $this->load->view('register/temp', $data);//$this->load->view('register/signup_fa', $data);
+         //$this->load->view('register/temp', $data);
+        $this->load->view('register/signup_fa', $data);
         $this->load->view('shared/_footer');
     }
 
@@ -325,6 +384,8 @@ class RegistrationController extends Pixel_Controller {
                 $link = base_url("activate-account/" . $customer->activate_hash);
                 $active_link = base_url("activate-email/" . $customer->activate_hash);
                 $this->load->library('emailsHelper');
+                //$this->load->library("PhpMailerLib");
+      
                 $application = $this->updateTempApp($customer);
                 $landingPage = "registration-completed";
                 if($application !== NULL){
@@ -339,20 +400,23 @@ class RegistrationController extends Pixel_Controller {
                     "link" => $link,
                     "activation" => $active_link,
                     "customer" => $customer);
-
                 $this->emailshelper->shootEmail($params, $this->registration);
+             
                 $userDate = array('CustomerObject' => $customer,
                   'AppLogin' => TRUE,
                   'IpCheck' => FALSE);
                   $this->session->set_userdata($userDate);
-                
+                // echo base_url($landingPage);
                 redirect(base_url($landingPage));
+                
             } else {//User not exisits
                 redirect(base_url("signup-error"));
+                exit();
             }
         } else {
             //bot or misuse 
-            redirect(base_url("un-available"));
+           redirect(base_url("un-available"));
+          exit();
         }
     }
     
@@ -362,7 +426,7 @@ class RegistrationController extends Pixel_Controller {
      *
      * Call back method to validate customer username existence
      *
-     * @param	string customer email
+     * @param   string customer email
      * @return  boolean
      */
     public function username_check($str) {
@@ -386,7 +450,7 @@ class RegistrationController extends Pixel_Controller {
      *
      * Call back method to validate customer password
      *
-     * @param	string customer password
+     * @param   string customer password
      * @return  boolean
      */
     public function password_check($str) {

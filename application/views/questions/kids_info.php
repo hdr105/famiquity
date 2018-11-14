@@ -14,6 +14,10 @@
                     for ($i=0; $i < $app->num_kids; $i++):
                 ?>
                 <div id="register-form" class="register-form">
+                    <div>
+                    <h5>Life Decision : <?php echo $this->session->userdata('life_decision'); ?></h5>
+                    <hr>
+                  </div>
                     <div class="section-field">
                         <label><?php echo str_replace("{VAR}", Constants::getnumberToText($i+1), $this->labelArray['kids_first_name']);?></label>
                         <div class="field-widget">

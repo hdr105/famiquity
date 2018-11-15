@@ -9,7 +9,7 @@
                     <ul class="list-inline text-left">
                         <li><a href="<?php echo Smart::loadAsset('docs/famiquity-terms-of-use .pdf')?>" target="_blank">Terms &amp; Conditions </a> &nbsp;&nbsp;&nbsp;|</li>
                         <li><a href="<?php echo Smart::loadAsset('docs/famiquity-privacy-policy.pdf')?>" target="_blank">Privacy Policy </a> &nbsp;&nbsp;&nbsp;|</li>
-                        <li><a href="#">Cookies </a></li>
+                        <li><a href="<?php echo base_url('cookies') ?>">Cookies </a></li>
                     </ul>
                 </div>
                 <div class="col-lg-6 col-sm-6">

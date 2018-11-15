@@ -11,6 +11,11 @@
       background-color: #ad0105;
       border-color: #9f1204;
 }
+
+
+
+
+
 .default { background: transparent; z-index: 9999; position: absolute; width: 100%; }
 /*topbar*/
 .topbar { border-bottom: 1px solid rgba(255, 255, 255, 0.1); padding: 14px 0; }

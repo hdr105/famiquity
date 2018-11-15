@@ -161,4 +161,11 @@ class HomeController extends Pixel_Controller {
         $this->load->view('consultant');
         $this->load->view('shared/_footer');
     }
+    public function cookiePage(){
+        $this->load->view('shared/_header');
+        $this->load->view('cookies');
+        $this->load->view('shared/_footer');
+    }
+
+
 }

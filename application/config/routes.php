@@ -262,3 +262,6 @@ $route['consultant'] = 'homeController/consultantPage';
 
 $route['register'] = 'homeController/registerPage';
 $route['create-activity'] = 'homeController/createActivity';
+
+//Adnan
+$route['cookies'] = 'HomeController/cookiePage';

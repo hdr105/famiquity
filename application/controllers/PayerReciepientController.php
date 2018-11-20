@@ -197,7 +197,7 @@ class PayerReciepientController extends Pixel_Controller {
             $key =  "wedding-gift-info";
             $objFlow = Smart::getNextPreviousStep($application, $key);
             $data['next_page'] = "";//$objFlow->next;
-            $data['show_assessment'] = TRUE;
+            $data['show_assessment'] = FALSE;
             $data['prev_page'] = $objFlow->prev;
             $data['percentage'] = $objFlow->percentage;
 
@@ -453,7 +453,7 @@ class PayerReciepientController extends Pixel_Controller {
             $key = 'home-title-info';
             $objFlow = Smart::getNextPreviousStep($application, $key);
             $data['next_page'] = "";//$objFlow->next;
-            $data['show_assessment'] = TRUE;
+            $data['show_assessment'] = FALSE;
             $data['prev_page'] = $objFlow->prev;
             $data['percentage'] = $objFlow->percentage;
             
@@ -506,10 +506,12 @@ class PayerReciepientController extends Pixel_Controller {
             $data['app'] = $application;
             $key = 'financial-info';
             $objFlow = Smart::getNextPreviousStep($application, $key);
-            $data['next_page'] = "";//$objFlow->next;
+            $data['next_page'] = "";//
 
             $data['show_assessment'] = TRUE;
             $data['prev_page'] = $objFlow->prev;
+
+            $this->session->set_userdata("nextPage",$objFlow->next);
             
             if((int)$application->relationship_status > 59){
                 $data['prev_page'] = ((int)$application->has_own_home === self::RENT)?'home-owner-info':$objFlow->prev;
@@ -1272,7 +1274,7 @@ class PayerReciepientController extends Pixel_Controller {
         
 
         $this->form_validation->set_rules('trust_setup', '', 'trim|required', $error);
-        $this->form_validation->set_rules('trust_income_draw_amount', '', 'trim|required', $error);
+        // $this->form_validation->set_rules('trust_income_draw_amount', '', 'trim|required', $error);
         if ($this->form_validation->run() == FALSE) {
             $this->trustInfoPage();
         } else {
@@ -2979,7 +2981,7 @@ class PayerReciepientController extends Pixel_Controller {
             $key =  "investments-stocks";
             $objFlow = Smart::getNextPreviousStep($application, $key);
             $data['next_page'] = $objFlow->next;
-            $data['show_assessment'] = TRUE;
+            $data['show_assessment'] = FALSE;
             $data['prev_page'] = $objFlow->prev;
             $data['percentage'] = $objFlow->percentage;
             
@@ -3612,7 +3614,7 @@ class PayerReciepientController extends Pixel_Controller {
             $data['risk'] = $risk;
             $key =  "num-gifts";
             $objFlow = Smart::getNextPreviousStep($application, $key);
-            $data['next_page'] = "";//$objFlow->next;
+            $data['next_page'] = "";
             $data['show_assessment'] = TRUE;
             $data['prev_page'] = $objFlow->prev;
             $data['percentage'] = $objFlow->percentage;
@@ -3621,6 +3623,8 @@ class PayerReciepientController extends Pixel_Controller {
                 
                 $data['next_page'] = $application->current_seo_uri;
             }
+
+
 
      
             $this->load->view('shared/_header');

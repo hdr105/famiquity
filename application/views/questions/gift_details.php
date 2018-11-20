@@ -7,17 +7,23 @@
         ?>
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
+              
                 <?php
                     $this->load->view('shared/_bar', array('percentage'=>$percentage, 'level'=>7));
                     echo Smart::softErrors();
                     echo Smart::formErrors();
+                    $life_decision = true;
                     for ($i=0; $i < $app->num_gifts; $i++):
                 ?>
                 <div id="register-form" class="register-form">
-                    <div>
+                    
+                    <?php if($life_decision == TRUE){ ?>
+                   <div>
                     <h5>Life Decision : <?php echo $this->session->userdata('life_decision'); ?></h5>
                     <hr>
-                  </div>
+
+                </div>
+                 <?php $life_decision = FALSE; } ?>
                     <div class="section-field">
                         <label><?php echo str_replace("{VAR}", Constants::getnumberToText($i+1), $this->labelArray['gift_value']);?></label>
                         <div class="input-group">
@@ -55,7 +61,7 @@
                     <div class="clearfix"></div>
                     
                 </div>
-                <hr>
+                
                 <?php endfor;?>
                 
                 <?php $this->load->view('shared/_buttons', array("prev_page"=>$prev_page,"next_page"=>$next_page, "show_assessment"=>$show_assessment));?>

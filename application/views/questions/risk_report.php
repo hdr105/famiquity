@@ -35,20 +35,23 @@
                     <br>
                     <div class="section-field">
                         <!-- JUNAID -->
-                        <?php if(Smart::isAuthorized()){ ?>
-                        <a href="<?php echo base_url('restart-application/'.$this->session->appId); ?>" class="btn btn-lg btn-info">Continue Questionnaire</a>
-                        <a href="<?php echo base_url('contact-us-info'); ?>" class="btn btn-lg btn-success">Save & Exit</a>
-                        <?php } elseif ($next_page != "") {
-                            ?>
-                            <a href="<?php echo base_url('contact-us-info'); ?>" class="btn btn-lg btn-info">Continue Questionnaire</a>
-                            <a href="<?php echo base_url('contact-us-info'); ?>" class="btn btn-lg btn-success">Save & Exit</a>
+                    <?php if(Smart::isAuthorized()) 
+                    {  
+                        $nextPage = $this->session->userdata("nextPage");
+                        $path = base_url($nextPage);
+                        ?>
+                        <a href="<?php echo $path; ?>" class="btn btn-lg btn-info">Continue Questionnaire</a> 
+                        <a href="<?php echo base_url(); ?>" class="btn btn-lg btn-success">Save & Exit</a>
+                    <?php
+                    }
+                    else
+                    {
+                        ?>
+                        <a href="<?php echo base_url('sign-in'); ?>" class="btn btn-lg btn-info">Continue Questionnaire</a>
+                        <a href="<?php echo base_url('sign-in'); ?>" class="btn btn-lg btn-success">Save & Exit</a>
                         <?php
-                        } else{?>
-                        <a href="<?php echo base_url('restart-temp-application/'.$this->session->appId); ?>" class="btn btn-lg btn-info">Continue Questionnaire</a>
-                        <a href="<?php echo base_url('contact-us-info'); ?>" class="btn btn-lg btn-success">Save & Exit</a>
-                        
-                        <?php }?>
-                            
+                    }
+                    ?>  
                     </div> 
                 </div>
                 
@@ -61,3 +64,5 @@
     </div>
 
 </section>
+
+                           

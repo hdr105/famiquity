@@ -342,7 +342,8 @@ class RegistrationController extends Pixel_Controller {
         );
         $data['provinces'] = $this->model->selectTypes('state');
         $this->load->view('shared/_header');
-        $this->load->view('register/temp', $data);//$this->load->view('register/signup_lawyer', $data);
+       // $this->load->view('register/temp', $data);//
+        $this->load->view('register/signup_lawyer', $data);
         $this->load->view('shared/_footer');
     }
 
